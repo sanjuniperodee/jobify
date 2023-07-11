@@ -1,0 +1,17 @@
+<svg width="68" height="89" viewBox="0 0 68 89" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Mask group">
+<mask id="mask0_77_44" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="68" height="89">
+<g id="Group">
+<g id="Group_2">
+<path id="Vector" d="M33.9286 5H9.82143C8.54271 5 7.31636 5.69195 6.41216 6.92364C5.50797 8.15532 5 9.82585 5 11.5677V59.731C5 61.4728 5.50797 63.1433 6.41216 64.375C7.31636 65.6067 8.54271 66.2987 9.82143 66.2987H58.0357C59.3144 66.2987 60.5408 65.6067 61.445 64.375C62.3492 63.1433 62.8571 61.4728 62.8571 59.731V50.974M33.9286 66.2987V83.8126" stroke="white" stroke-width="8.625" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_2" d="M58.0357 18.1355H48.3929C45.7301 18.1355 43.5714 21.0759 43.5714 24.7032V29.0817C43.5714 32.7089 45.7301 35.6494 48.3929 35.6494H58.0357C60.6985 35.6494 62.8571 32.7089 62.8571 29.0817V24.7032C62.8571 21.0759 60.6985 18.1355 58.0357 18.1355Z" fill="#555555" stroke="white" stroke-width="8.625" stroke-linejoin="round"/>
+<path id="Vector_3" d="M53.2143 5C54.493 5 55.7194 5.69195 56.6235 6.92364C57.5277 8.15532 58.0357 9.82585 58.0357 11.5677V18.1354H48.3929V11.5677C48.3929 9.82585 48.9008 8.15532 49.805 6.92364C50.7092 5.69195 51.9356 5 53.2143 5Z" fill="#555555" stroke="white" stroke-width="8.625" stroke-linejoin="round"/>
+<path id="Vector_4" d="M17.8571 83.8126H50" stroke="white" stroke-width="8.625" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</mask>
+<g mask="url(#mask0_77_44)">
+<path id="Vector_5" d="M-4.64285 -8.13544H72.5V96.948H-4.64285V-8.13544Z" fill="#060043" fill-opacity="0.9"/>
+</g>
+</g>
+</svg>

@@ -1,0 +1,32 @@
+.instruction{
+    height: 845px;
+    background: rgba(6, 0, 67, 0.96);
+    backdrop-filter: blur(212.39999389648438px);
+}
+
+.instruction-title{
+    font-size: 39px;
+    color: #fff;
+    font-weight: 800;
+    text-align: center;
+}
+
+.container-instruction{
+    display: flex;
+    justify-content: center;
+    gap: 79px;
+}
+
+.wrap-instruction{
+    width: 288px;
+    height: 336px;
+    border-radius: 29px;
+    border: 1px solid #FFF;
+    background: rgba(6, 1, 65, 0.00);
+    color: #FFF;
+    text-align: center;
+}
+
+.instruction-h2{
+    margin: 152px 10px 18px 0;
+}

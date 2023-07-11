@@ -1,0 +1,51 @@
+.footer{
+    height:559px ;
+    background-color: rgba(6, 0, 67, 0.94);;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+}
+
+.footer-h2{
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 700;
+    padding-top: 143px;
+    margin-bottom: 34px;
+}
+
+.footer-p{
+    color: #D9D9D9;
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 135%;
+    letter-spacing: 0.19px;
+}
+
+.socset-input{
+    border-radius:11px;
+}
+
+input[type="text"]::placeholder {
+    padding: 14px 88px 14px 18px;
+}
+
+.socset{
+    width: 217px;
+    height: 54px;
+    border-radius: 11px;
+    background-color: #FFF;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 34px;
+}
+
+.socset-icon{
+    width: 100px;
+    border-radius: 0px 11px 11px 0px;
+    background-color: #1E157D;
+    padding: 0px 7px;
+}
