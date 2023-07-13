@@ -1,0 +1,31 @@
+/* .header-bag{
+    background-image: url('/assets/icon/working.svg') ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+} */
+
+.long-input{
+    margin-top: 96px;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.input-bacg{
+    background-color:rgba(255, 255, 255, 0.62);
+}
+
+.title{
+    color:#1b1a1a;
+    font-size: 39px;
+    font-weight: 900;
+    margin-top: 156px;
+    margin-left: 86px;
+}
+/* 
+.header-bag > app-header {
+  position: relative;
+  z-index: 2;
+} */

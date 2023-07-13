@@ -1,0 +1,16 @@
+.header-bag{
+    position: relative;
+    background-image: url('/assets/icon/working.svg') ;
+    height: 800px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+.header-bag::before{
+   position: absolute;
+   content: '';
+   background-color: rgba(6, 0, 67, 0.39);
+   height: 800px;
+}
