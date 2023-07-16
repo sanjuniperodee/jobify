@@ -1,4 +1,5 @@
 
+import { style } from '@angular/animations';
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./getj.component.css']
 })
 export class GetjComponent {
- 
+
 }

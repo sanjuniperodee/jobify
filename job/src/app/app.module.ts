@@ -6,13 +6,17 @@ import { AppComponent } from './app.component';
 import { SharedModule} from './shared/shared.module';
 import { AboutComponent } from './about us/about.component';
 import { HeaderComponent } from './shared/header/header.component';
+import { GetjComponent } from './get job/getj.component';
+import { OfferComponent } from './vacansis/offer.component';
 
 
 
 @NgModule({
   declarations: [
-    AppComponent
-
+    AppComponent,
+    AboutComponent,
+    GetjComponent,
+    OfferComponent
   ],
   imports: [
     BrowserModule,
@@ -21,8 +25,7 @@ import { HeaderComponent } from './shared/header/header.component';
   
   ],
   exports:[],
- 
-  providers: [SharedModule],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

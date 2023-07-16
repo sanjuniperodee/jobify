@@ -1,15 +1,22 @@
+<div [ngStyle]="{
+  background: 'url(' + background + ')',
+  'height': height,
+  'background-repeat': repeatMode,
+  'background-size': backgroundSize,
+}">
 <header class="header">
- <div class="container-header">
-    <nav class="nav">
-      <a href="">Главная</a>
-      <a routerLink="/job">Найти работу</a>
-      <a routerLink="/about" >О компании</a>
-      <a href="">Связаться</a>
-    </nav>
-    <div class="nav-reg">
-      <p>Регистрация</p>
-      <p>Войти</p>
-    </div>
- </div>
-</header>
-<router-outlet></router-outlet>
+  <div class="container-header">
+     <nav class="nav">
+       <a href="">Главная</a>
+       <a routerLink="/job">Найти работу</a>
+       <a routerLink="/about" >О компании</a>
+       <a href="">Связаться</a>
+     </nav>
+     <div class="nav-reg">
+       <p>Регистрация</p>
+       <p>Войти</p>
+     </div>
+  </div>
+ </header>
+</div>
+<ng-content></ng-content>

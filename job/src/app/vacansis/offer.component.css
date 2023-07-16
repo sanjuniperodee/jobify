@@ -1,0 +1,105 @@
+.title-job{
+    color: #FFF;
+    font-size: 41px;
+    font-weight: 900;
+    text-align: center;
+    margin-top: -18.12rem;
+}
+
+.offer-container{
+    display: flex;
+    justify-content: space-around;
+   
+}
+
+.offer-img{
+    width: 109.981px;
+    height: 107.161px;
+    transform: rotate(-0.249deg);
+    flex-shrink: 0;
+    border: 0.94px solid #060043;
+    background: rgba(217, 217, 217, 0.00);
+    margin-bottom: 25px;
+}
+
+.offer-h2{
+    color: #000;
+    font-size: 28.2px;
+    font-weight: 400;
+    margin-bottom: 17px;
+}
+
+.offer-desc{
+    display: flex;
+    gap: 90px;
+}
+
+.offer-text{
+    color: #000;
+    font-size: 16.92px;
+    font-weight: 400;
+}
+
+.money{
+    color: rgba(0, 0, 0, 0.80);
+    font-size: 16.92px;
+    font-weight: 400;
+}
+
+.info-h2{
+    color: #000;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.info-text{
+    color: rgba(0, 0, 0, 0.84);
+    font-size: 22px;
+    font-weight: 300;
+    letter-spacing: 0.22px;
+    width: 709px;
+}
+
+.info-desck{
+  width: 386px; 
+  height: fit-content;
+  border: 1px solid #D1D1D1;
+  background: #FFF;
+  padding: 39px 37px;
+}
+
+.desck-h2{
+    color: #060043;
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.desck-wrap{
+    display: flex;
+}
+
+.decck-btn{
+    width: 212px;
+    height: 55px;
+    background: #060043;
+    color: #FFF;
+}
+
+
+
+
+.about-p{
+    color: #060043;
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 0.22px;
+}
+
+.about-contacts{
+    color: #060043;
+    font-size: 22px;
+    font-weight: 300;
+    /* line-height: 197%; 43.34px */
+    /* letter-spacing: 0.22px; */
+}
