@@ -1,0 +1,283 @@
+.container{
+  
+}
+
+.nav{
+    background: rgba(6, 0, 67, 0.92);
+    display: flex;
+    gap: 236px;
+    padding: 50px 73px;
+    
+}
+
+.logo{
+    width: 319px;
+    color: #FFF;
+    font-size: 41px;
+    font-weight: 900;
+}
+
+.title{
+    width: 282px;
+    color: #FFF;
+    font-size: 41px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.h2-title{
+    color: #000;
+    font-size: 41px;
+    font-weight: 700;
+}
+
+.checkbox{
+    width: 43px;
+    height: 43px;
+}
+
+.label{
+    color: #000;
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: -0.24px;     
+}
+
+.reg-btn{
+    width: 199px;
+    height: 63px;
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: -0.24px;
+    border-radius: 14px;
+    background: #060043;
+}
+
+.regis-p{
+    color: #000;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.input{
+    width: 95%;
+    height: 87px;
+    border-radius: 11px;
+    border: 1px solid #060043;
+    background: #FFF;
+}
+
+input[type="text"]::placeholder {
+    padding: 28px 37px;
+    color: rgba(0, 0, 0, 0.49);
+    font-size: 25px;
+    font-weight: 500;
+}
+
+
+/* Скрыть оригинальный чекбокс */
+input[type="checkbox"].soglawenie {
+    display: none;
+  }
+  
+  /* Стилизация внешнего вида чекбокса */
+  label.regis-p {
+    display: inline-block;
+    align-items: center;
+    position: relative;
+    padding-left: 51px; /* Отступ слева, чтобы создать "вымпел" */
+    cursor: pointer;
+  }
+  
+  /* Создание внешнего вида "контейнера" чекбокса */
+  label.regis-p:before {
+    content: "";
+    display: inline-block;
+    width: 37px;
+    height: 37px;
+    position: absolute;
+    left: 0;
+    top: 1px;
+    border-radius: 10px;
+    border: 3px solid #060043;
+    background: #FFF;
+  }
+  
+  /* Изменение вида чекбокса, когда он отмечен */
+  input[type="checkbox"].soglawenie:checked + label.regis-p:before {
+    background-color: #060043; /* Изменение цвета фона при отметке чекбокса */
+  }
+
+  .reg-btn-nazad{
+    color: #000;
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  .reg-btn-dalee{
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: -0.24px;
+    width: 199px;
+    height: 63px;
+    border-radius: 14px;
+    background: #060043;
+  }
+
+  .seleckt-btn{
+    display: flex;
+    gap:20px;
+  }
+
+  .btn-vacans{
+    width: 179px;
+    height: 43px;
+    background-color: #060043;
+    color: #FFF;
+    font-size: 21px;
+    font-weight: 500;
+    border-radius: 20px;
+  }
+
+  .seleckt-text{
+    color: #060043;
+    font-size: 21px;
+    font-weight: 500;
+  }
+
+  .geo{
+    width: 95%;
+    height: 436px;
+    flex-shrink: 0;
+    border-radius: 21px;
+    border: 3px solid #060043;
+    background: #FFF;
+    text-align: center;
+    padding-top:8% ;
+    font-size: 127.2px;
+    font-weight: 700;
+  }
+  
+
+.general-foto{
+    width: 984px;
+    height: 800px;
+    flex-shrink: 0;
+    border-radius: 27px;
+    border: 3px solid #060043;
+    background: #FFF;
+    margin: 0 auto;
+    display: flex;
+    gap: 151px;
+   
+}
+
+.foto-ramka{
+    width: 261px;
+    height: 346px;
+    flex-shrink: 0;
+    background: #D9D9D9;
+    position: relative;
+    
+}
+
+.ramka{
+    width: 80px;
+    height: 80px;
+    background-color: #000;
+    border-radius: 50px;
+    padding: 18px 20px;
+    position: absolute;
+    content: '';
+    top: 300px;
+    left: 220px;
+}
+
+
+
+
+
+
+.foto-info{
+    width: 415px;
+    height: 800px;
+    flex-shrink: 0;
+    border-radius: 0px 26px 26px 0px;
+    border: 3px solid #060043;
+    opacity: 0.699999988079071;
+    background: rgba(217, 217, 217, 0.61);
+}
+
+.info-text{
+    color: #000;
+    font-size: 20px;
+    font-weight: 500;
+    width: 340px;
+}
+
+.instruction-text{
+    color: #000;
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: -0.26px;
+}
+
+.foto-primer{
+    width: 71px;
+    height: 81px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    border: 2px solid #1E9E3A;
+    background: #FFF;
+}
+
+.foto-primer2{
+    width: 71px;
+    height: 81px;
+    border-radius: 8px;
+    border: 2px solid #FFF;
+    background: #D0CCCC;
+}
+
+.wrap-foto{
+    display: flex;
+    position: relative;
+    width: 150px;
+}
+
+.desc-p{
+    color: #000;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.decc-li{
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+ul {
+    /* Убираем стандартные маркеры списка */
+    list-style: none;
+  }
+  
+  ul li {
+    position: relative; /* Обязательно устанавливаем позиционирование, чтобы псевдоэлемент сработал */
+    padding-left: 1em; /* Добавляем отступ слева для места под круглым маркером */
+  }
+  
+  ul li::before {
+    content: "●"; /* Вместо ● можно использовать другие символы или Unicode */
+    position: absolute;
+    left: 0;
+    top: 0; /* Выравниваем маркер по вертикали (можно настроить по вашему желанию) */
+    color: black; /* Задаем цвет круглому маркеру */
+  }
+
+
+  
+
+
