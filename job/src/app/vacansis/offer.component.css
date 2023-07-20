@@ -8,7 +8,10 @@
 
 .offer-container{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin-left: 100px;
+    gap: 200px;
+    overflow:hidden;
    
 }
 
@@ -72,7 +75,7 @@
     color: #060043;
     font-size: 24px;
     font-weight: 500;
-    text-align: center;
+    
 }
 
 .desck-wrap{

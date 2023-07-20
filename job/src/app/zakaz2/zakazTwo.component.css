@@ -1,0 +1,155 @@
+.container-zakaz{
+    background: rgba(51, 36, 213, 0.08);
+}
+
+.nav{
+  
+    color: #000;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.nav-border{
+    width: 174px;
+    border-top: 1px solid rgba(0, 0, 0, 0.29);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.29);padding: 24px 0px 36px;
+}
+
+.p-text{
+    color: #5C5C5C;
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.title-h2{
+    color: #000;
+    font-size: 38.453px;
+    font-weight: 700;
+}
+
+.input-search{
+    width: 730px;
+    height: 64px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    background: rgba(210, 210, 210, 0.73);
+}
+
+input[type="text"].input-search::placeholder {
+    color: #000;
+    font-size: 19px;
+    font-weight: 500;
+    letter-spacing: -0.19px;
+    padding-left: 15px;
+}
+
+.vacans{
+    margin-top: 23px;
+    border-radius: 56px;
+    background: #D2D2D2;
+    color: #000;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 500;
+    padding: 8px 0;
+}
+
+
+
+
+/* Скрыть стандартный чекбокс */
+input[type="checkbox"].checkbox {
+    display: none;
+  }
+  
+  /* Стилизовать метку для чекбокса */
+  label.label {
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    padding-top: 5px;
+    color: #000;
+    font-size: 15px;
+    font-weight: 600;
+  }
+  
+  /* Создать стилизованный вид чекбокса */
+  label.label::before {
+    position: absolute;
+    content: '';
+    width: 28px;
+    height: 28px;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    border: 3px solid #060043;
+    background: #FFF;
+    border-radius: 10px;
+  }
+  
+  /* Показать галочку и изменить цвет фона при выборе чекбокса */
+  input[type="checkbox"].checkbox:checked + label.label::before {
+    background: #060043;
+  }
+  
+  /* Стилизовать галочку внутри чекбокса */
+  input[type="checkbox"].checkbox:checked + label.label::before::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 9px;
+    height: 5px;
+    border: solid #FFF;
+    border-width: 0 3px 3px 0;
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+
+
+  .foto{
+    display: flex;
+    justify-content: space-between;
+    color: #000;
+    font-size: 19px;
+    font-weight: 600;
+    width: 760px;
+    height: 65px;
+    border-radius: 14px;
+    border: 1px dashed #000;
+    background: rgba(255, 255, 255, 0.00);
+    padding: 15px 13px 16px 24px;
+    margin-top: 26px;
+  }
+
+  input[type="checkbox"].checkbox2 {
+    display: none;
+  }
+
+  label.label2{
+    position: relative;
+    padding-left: 40px;
+    color: #000;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  label.label2::before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width:29px ;
+    height: 29px;
+    background-color: #D9D9D9;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+
+  input[type="checkbox"].checkbox2:checked + label.label2::before {
+    background: #060043;
+  }
+
+ 
+
+  

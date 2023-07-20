@@ -1,0 +1,153 @@
+.container-zakaz{
+    background: rgba(51, 36, 213, 0.08);
+}
+
+
+
+
+
+.h2-title{
+    color: #000;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.nav-menu{
+    width: 307px;
+    border-radius: 9px;
+    background: rgba(255, 255, 255, 0.24);
+}
+
+.nav-text{
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.h3-title{
+    color: #000;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.dannie{
+    width: 760px;
+    border-radius: 16px;
+    background: #FFF;
+    height: 171px;
+}
+
+.dannie-info{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.24);
+}
+
+.profile-img{
+    width: 62px;
+    height: 62px;
+    background-color: #D9D9D9;
+    border-radius: 30px;
+}
+
+.profile-name{
+    color: #000;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.profile-date{
+    color: rgba(0, 0, 0, 0.52);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.profile-status{
+    color: rgba(0, 0, 0, 0.88);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.container-2{
+    width: 760px;
+    border-radius: 16px;
+    background: #FFF;
+}
+
+.p-status{
+    color: rgba(0, 0, 0, 0.45);
+    font-size: 10px;
+    font-weight: 500;
+}
+
+.linia{
+    width: 701.035px;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.27);
+    margin: 18px 26px 26px 0px;
+}
+
+.otziv{
+    color: rgba(0, 0, 0, 0.52);
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.btn-soc{
+    width: 130px;
+    height: 33px;
+    flex-shrink: 0;
+    border-radius: 7px;
+    background: #3687FF;
+    color: #FFF;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    padding: 7px 27px 7px 16px  ;
+}
+
+.label-yvedomlen{
+    color: #000;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+/* Скрыть стандартный чекбокс */
+input[type="checkbox"].checkbox-round {
+    display: none;
+  }
+  
+  /* Стилизовать метку для чекбокса */
+  label.label-yvedomlen {
+    position: relative;
+    padding-left: 35px;
+    color: #000;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  
+  /* Создать стилизованный вид круглого чекбокса */
+  label.label-yvedomlen::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    border: 2px solid #060043;
+    cursor: pointer;
+  }
+  
+  /* Показать галочку при выборе чекбокса */
+  input[type="checkbox"].checkbox-round:checked + label.label-yvedomlen::before {
+    background: #060043;
+  }
+
+  .btn-delete{
+    color: #000;
+    font-size: 12px;
+    font-weight: 700;
+    text-decoration-line: underline;
+  }
+  

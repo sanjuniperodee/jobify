@@ -1,1 +1,18 @@
-<div class="">dfdsfdsdfdfdfdfdfdfdfdf</div>
+<div [ngStyle]="{
+    'height': height,
+  }" > 
+    <nav class="flex items-center justify-between ml-[42px] mr-[58px]">
+        <div class="logo pt-[10px]">
+            лого
+        </div>
+
+        <div class="flex mt-[33px] cursor-pointer" routerLink="/profile">
+            <div class="nav-decs mr-[84px]" >Мои заказы</div>
+            <div class="flex gap-[12px]">
+                <div class="w-[34px] h[34px] bg-[#D9D9D9] rounded-[20px]"></div>
+                <div class="nav-decs">Азамат</div>
+            </div>
+        </div>
+    </nav>
+</div>
+<ng-content></ng-content>

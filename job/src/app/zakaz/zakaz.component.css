@@ -1,0 +1,97 @@
+.container-zakaz{
+    background: rgba(51, 36, 213, 0.08);
+}
+
+.h2-zakaz{
+    color: #000;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.p-zakaz{
+    color: #000;
+    font-size: 28px;
+    font-weight: 700;
+    margin-right: 10px;
+}
+
+.create-order {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+  
+.orders{
+  display: block;
+  width: 95%;
+  height: auto;
+  padding: 13px 19px;
+  background-color: white;
+  border-radius: 21px;
+  border: 0px solid #3A2BDE;
+  justify-content: space-between;
+}
+
+.orders1{
+    width: 95%;
+    height: 176px;
+    background-color: white;
+    border-radius: 21px;
+    border: 0px solid #3A2BDE;
+    padding: 13px 19px;
+}
+
+.status-zakaza{
+    color: rgba(0, 0, 0, 0.68);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.number{
+    width: 35px;
+    height: 35px;
+    border-radius: 20px;
+    background-color: #060043;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+.create-input{
+    width: 887px;
+    height: 72px;
+    flex-shrink: 0;
+    border-radius: 11px;
+    background: #E9E9E9;
+}
+
+input[type="text"].create-input::placeholder {
+   padding:20px 28px;
+   color: #848484;
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.create-btn{
+    width: 189px;
+    height: 72px;
+    flex-shrink: 0;
+    border-radius: 11px;
+    background: #060043;
+    color: #FFF;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.vacans{
+    width: 298px;
+    height: 46px;
+    border-radius: 36px;
+    background: #DCDCDC;
+    color: #000;
+    font-size: 20px;
+    font-weight: 500;  
+    text-align: center;
+    padding-top: 10px;
+    margin-top: 22px;
+}

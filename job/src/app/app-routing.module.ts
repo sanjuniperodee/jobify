@@ -7,6 +7,9 @@ import { GetjComponent } from './get job/getj.component';
 import { OfferComponent } from './vacansis/offer.component';
 import { RegistrationComponent } from './artist registration/registration';
 import { CreatingComponent } from './creating an application/creating.component';
+import { ZakazComponent } from './zakaz/zakaz.component';
+import { ZakazTwoComponent } from './zakaz2/zakazTwo.component';
+import { ProfileComponent } from './profile/profile.component';
 
 const routes: Routes = [
       { path: '', component: HomeComponent },
@@ -14,7 +17,9 @@ const routes: Routes = [
       { path:'job', component: GetjComponent},
       { path: 'offer', component: OfferComponent },
       {path:'registration', component: RegistrationComponent},
-      {path:'creating', component:CreatingComponent}
+      {path:'zakaz', component:ZakazComponent},
+      {path:'zakaz2', component:ZakazTwoComponent},
+      {path:'profile',component:ProfileComponent}
 ];
 
 @NgModule({

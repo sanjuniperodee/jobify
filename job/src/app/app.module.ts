@@ -8,6 +8,12 @@ import { AboutComponent } from './about us/about.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { GetjComponent } from './get job/getj.component';
 import { OfferComponent } from './vacansis/offer.component';
+import { CreatingComponent } from './creating an application/creating.component';
+import { ZakazComponent } from './zakaz/zakaz.component';
+import { RegistrationComponent } from './artist registration/registration';
+import { ZakazTwoComponent } from './zakaz2/zakazTwo.component';
+import { ProfileComponent } from './profile/profile.component';
+
 
 
 
@@ -16,7 +22,12 @@ import { OfferComponent } from './vacansis/offer.component';
     AppComponent,
     AboutComponent,
     GetjComponent,
-    OfferComponent
+    OfferComponent,
+    CreatingComponent,
+    ZakazComponent,
+    RegistrationComponent,
+    ZakazTwoComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,

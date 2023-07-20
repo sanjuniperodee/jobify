@@ -1,0 +1,85 @@
+<div class="container-zakaz pb-[160px]">
+    <app-creating>
+      <div class="ml-[42px]">
+        <div class="">
+            <h2 class="h2-zakaz mt-[80px] mb-[31px]">Мои заказы</h2>
+        </div>
+        <div class="orders relative">
+            <div class="create-order">
+              <div class="block">
+                <p class="p-zakaz">Создать заказ</p>
+                <div *ngIf="open" class="mt-[20px]">
+                  <div class="flex gap-[29px]">
+                    <input type="text" placeholder="Услуга или специалист" class="create-input">
+                    <button class="create-btn">Найти</button>
+                  </div>
+              
+                  <div class="flex gap-12 mt-22">
+                    <div class="vacans">Казахский язык онлайн</div>
+                    <div class="vacans">Юрист-консультант</div>
+                    <div class="vacans">Клининг-услуги</div>
+                  </div>
+                </div>
+              </div>
+              <div class="">
+                <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none" (click)="openWindow()" class="cursor-pointer absolute left-[84rem] top-[17px]">
+                  <path d="M17.0002 7.08337V26.9167M7.0835 17H26.9168" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+          
+
+
+        <!-- <div class="orders">
+            <p class="p-zakaz">Создать заказ</p>
+            <div *ngIf="open" class="">
+                <div class="flex gap[22px]">
+                    <input type="text" placeholder="Услуга или специалист">
+                    <button>Найти </button>
+                </div>
+
+                <div class="flex gap[12px] mt-[22px]">
+                    <div class="">Казахский язык онлайн</div>
+                    <div class="">Юрист-консультант</div>
+                    <div class="">Клининг-услуги</div>
+                </div>
+            </div>
+            <svg *ngIf="!open" xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none" (click)="!openWindow()" class="cursor-pointer">
+                <path d="M17.0002 7.08337V26.9167M7.0835 17H26.9168" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div> -->
+        <div class="orders1 mt-[10px]">
+            <div class="">
+                <div class="flex  justify-between">
+                     <div class="flex gap-[19px] items-center">
+                        <h2 class="p-zakaz">Юрист-консультант</h2>
+                        <div class="number">3</div>
+                    </div>
+                    <div class="status-zakaza ">11 июля 2023</div>
+                </div>
+                <div class="status-zakaza mt-[14px]">
+                    Заказ закрыт для откликов
+                </div>
+                <div class="w-[40px] h-[40px] bg-[#D9D9D9] rounded-[20px] mt-[13px]" ></div>
+            </div>
+        </div>
+
+        <div class="orders1 mt-[10px]">
+            <div class="">
+                <div class="flex justify-between">
+                     <div class="flex gap-[19px] items-center">
+                        <h2 class="p-zakaz">Веб-дизайнер</h2>
+                        <div class="number">3</div>
+                    </div>
+                    <div class="status-zakaza ml-[258px]">11 июля 2023</div>
+                </div>
+                <div class="status-zakaza mt-[14px]">
+                    Заказ отменен
+                </div>
+                <div class="w-[40px] h-[40px] bg-[#D9D9D9] rounded-[20px] mt-[13px]" ></div>
+            </div>
+        </div>
+      </div>
+    </app-creating>
+</div>

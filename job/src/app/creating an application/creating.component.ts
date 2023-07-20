@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-creating',
@@ -6,6 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./creating.component.css']
 })
 export class CreatingComponent {
-
-
+  @Input() height: string = "100px";
 }
