@@ -153,3 +153,16 @@
     height: 86px;
     background-color: #060043;
 }
+
+
+.str{
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: #D9D9D9;
+    cursor: pointer;
+}
+
+.str:active{
+    background-color: #060043;
+}

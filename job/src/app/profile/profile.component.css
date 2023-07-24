@@ -150,4 +150,99 @@ input[type="checkbox"].checkbox-round {
     font-weight: 700;
     text-decoration-line: underline;
   }
-  
+
+
+.input-name{
+    width: 681px;
+    height: 56px;
+    flex-shrink: 0;
+    border-radius: 11px;
+    background: rgba(217, 217, 217, 0.71);
+    padding: 6px 15px 15px 19px;
+    margin-top: 13px;
+} 
+
+.pol{
+    width: 268px;
+    height: 56px;
+    flex-shrink: 0;
+    border-radius: 11px;
+    background: rgba(217, 217, 217, 0.71);
+    padding: 17px 18px 15px 19px;
+    outline: none;
+    position: relative;
+}
+
+.pol::after{
+    position: absolute;
+    content:'';
+    background-image: url('/assets/icon/strelka.svg');
+    width: 24px;
+    height: 24px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 18px;
+}
+
+.pol:hover {
+    background: rgba(217, 217, 217, 1); 
+}
+
+.input-nomer{
+    width: 681px;
+    height: 56px;
+    border-radius: 11px;
+    background: rgba(217, 217, 217, 0.71);
+    display: flex;
+    align-items: center;
+    padding: 20px 11px 17px;
+    gap: 5px;
+    margin-top: 18px;
+}
+
+/* input[type="text"].nomer::placeholder{
+    background-color: rgba(217, 217, 217, 0.71) !important;
+} */
+
+.nomer{
+background: rgba(217, 217, 217, -0.71);
+}
+
+.btn-btn{
+    width: 91px;
+    height: 24px;
+    flex-shrink: 0;
+    border-radius: 6px;
+    color: #FFF;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.mail{
+    width: 681px;
+    height: 56px;
+    border-radius: 11px;
+    background: rgba(217, 217, 217, 0.71);
+    padding: 10px 19px 27px;
+}
+
+.mail-text{
+    color: rgba(0, 0, 0, 0.49);
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.p-mail{
+    color: #000;
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.lab{
+    color: #000;
+    font-size: 10px;
+    font-weight: 500;
+}
+
+
+

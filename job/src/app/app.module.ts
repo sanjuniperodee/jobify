@@ -13,6 +13,7 @@ import { ZakazComponent } from './zakaz/zakaz.component';
 import { RegistrationComponent } from './artist registration/registration';
 import { ZakazTwoComponent } from './zakaz2/zakazTwo.component';
 import { ProfileComponent } from './profile/profile.component';
+import { PochtaComponent } from './regestr pochta/pochta.component';
 
 
 

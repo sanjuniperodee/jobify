@@ -8,9 +8,13 @@
     
 }
 
-.header-bag::before{
+/* .header-bag::after{
    position: absolute;
    content: '';
    background-color: rgba(6, 0, 67, 0.39);
-   height: 800px;
-}
+   height: 100%;
+   width: 100%;
+   top: 0;
+   left: 0;
+   z-index: 1;
+} */

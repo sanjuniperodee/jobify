@@ -15,14 +15,17 @@ header{
 .nav{
     display: flex;
     gap: 39px;
+    color: white;
 
 }
 
 .nav-reg{
     display: flex;
     gap: 30px;
-   
+    color: white;
+
 }
+
 /* 
 .title{
     color:#1b1a1a;

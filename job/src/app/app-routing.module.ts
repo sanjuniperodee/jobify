@@ -10,6 +10,7 @@ import { CreatingComponent } from './creating an application/creating.component'
 import { ZakazComponent } from './zakaz/zakaz.component';
 import { ZakazTwoComponent } from './zakaz2/zakazTwo.component';
 import { ProfileComponent } from './profile/profile.component';
+import { PochtaComponent } from './regestr pochta/pochta.component';
 
 const routes: Routes = [
       { path: '', component: HomeComponent },
@@ -19,7 +20,8 @@ const routes: Routes = [
       {path:'registration', component: RegistrationComponent},
       {path:'zakaz', component:ZakazComponent},
       {path:'zakaz2', component:ZakazTwoComponent},
-      {path:'profile',component:ProfileComponent}
+      {path:'profile',component:ProfileComponent},
+      {path:'reg', component:PochtaComponent}
 ];
 
 @NgModule({

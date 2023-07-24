@@ -1,0 +1,81 @@
+.nav{
+    height: 150px;
+    background: rgba(6, 0, 67, 0.92);
+    display: flex;
+    padding:47px 90px 52px;
+}
+
+.logo{
+    width: 319px;
+    height: 51px;
+    flex-shrink: 0;
+    color: #FFF;
+    font-size: 41px;
+    font-weight: 900;
+}
+
+.vxod{
+    width: 664px;
+    height: 45px;
+    flex-shrink: 0;
+    color: #FFF;
+    font-size: 41px;
+    font-weight: 800;
+}
+
+.forma{
+    width: 719px;
+    height: 426px;
+    flex-shrink: 0;
+    border-radius: 30px;
+    border: 1px solid rgba(92, 92, 92, 0.66);
+    background: #FFF;
+    margin: 0 auto;
+    margin-top: 130px;
+    border-top: 1px solid rgba(92, 92, 92, 0.66);
+}
+
+.lin{
+
+}
+
+.wrap{
+    padding: 39px 37px;
+}
+
+.nomer{
+    width: 645px;
+    height: 78px;
+    flex-shrink: 0;
+    border-radius: 19px;
+    border: 1px solid rgba(92, 92, 92, 0.62);
+    background: #FFF;
+}
+
+input[type="text"].nomer::placeholder{
+    padding: 20px 33px;
+    color: rgba(0, 0, 0, 0.39);
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.status{
+    color: rgba(0, 0, 0, 0.52);
+    font-family: Mulish;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 13px;
+    margin-bottom: 33px;
+}
+
+.btn{
+    width: 645px;
+    height: 78px;
+    flex-shrink: 0;
+    border-radius: 19px;
+    border: 1px solid rgba(92, 92, 92, 0.62);
+    background: #060043;
+    color: #FFF;
+    font-size: 33px;
+    font-weight: 700;
+}
