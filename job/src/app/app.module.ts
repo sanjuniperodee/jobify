@@ -14,6 +14,7 @@ import { RegistrationComponent } from './artist registration/registration';
 import { ZakazTwoComponent } from './zakaz2/zakazTwo.component';
 import { ProfileComponent } from './profile/profile.component';
 import { PochtaComponent } from './regestr pochta/pochta.component';
+import { IspolnitelComponent } from './registr-ispolnitel/ispolnitel.component';
 
 
 
@@ -28,7 +29,9 @@ import { PochtaComponent } from './regestr pochta/pochta.component';
     ZakazComponent,
     RegistrationComponent,
     ZakazTwoComponent,
-    ProfileComponent
+    ProfileComponent,
+    PochtaComponent,
+    IspolnitelComponent
   ],
   imports: [
     BrowserModule,

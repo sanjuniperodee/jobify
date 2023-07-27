@@ -14,7 +14,12 @@
 }
 
 .input-bacg{
-    background-color:rgba(255, 255, 255, 0.62);
+    background-color:rgba(255, 255, 255, 1);
+    outline: none;
+}
+
+input[type="text"]::placeholder{
+    color:gray
 }
 
 .title{
@@ -23,6 +28,12 @@
     font-weight: 900;
     margin-top: 156px;
     margin-left: 86px;
+}
+
+.input-container{
+    border-radius: 10px;
+    overflow: hidden;
+   
 }
 /* 
 .header-bag > app-header {
