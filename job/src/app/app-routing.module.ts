@@ -11,6 +11,9 @@ import { ZakazComponent } from './zakaz/zakaz.component';
 import { ZakazTwoComponent } from './zakaz2/zakazTwo.component';
 import { ProfileComponent } from './profile/profile.component';
 import { PochtaComponent } from './regestr pochta/pochta.component';
+import { LayuotComponent } from './layuot ispolnitel/layuot.component';
+import { ZakazLayuoComponent } from './layuot zakaz/zakazlayuot.component';
+import { BalansComponent } from './balans/balans.component';
 
 const routes: Routes = [
       { path: '', component: HomeComponent },
@@ -21,7 +24,10 @@ const routes: Routes = [
       {path:'zakaz', component:ZakazComponent},
       {path:'zakaz2', component:ZakazTwoComponent},
       {path:'profile',component:ProfileComponent},
-      {path:'reg', component:PochtaComponent}
+      {path:'reg', component:PochtaComponent},
+      {path:'layuot', component:LayuotComponent},
+      {path:'chat',component:ZakazLayuoComponent},
+      {path:'balans',component:BalansComponent}
 ];
 
 @NgModule({

@@ -1,0 +1,7 @@
+.logo{
+    @apply font-black text-white w-[319px] text-[41px]
+}
+
+.p-nav{
+    @apply text-white  font-semibold text-[22px]
+}

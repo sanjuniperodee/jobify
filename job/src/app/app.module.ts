@@ -15,6 +15,10 @@ import { ZakazTwoComponent } from './zakaz2/zakazTwo.component';
 import { ProfileComponent } from './profile/profile.component';
 import { PochtaComponent } from './regestr pochta/pochta.component';
 import { IspolnitelComponent } from './registr-ispolnitel/ispolnitel.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ZakazLayuoComponent } from './layuot zakaz/zakazlayuot.component';
+import { LayuotComponent } from './layuot ispolnitel/layuot.component';
+import { BalansComponent } from './balans/balans.component';
 
 
 
@@ -31,12 +35,16 @@ import { IspolnitelComponent } from './registr-ispolnitel/ispolnitel.component';
     ZakazTwoComponent,
     ProfileComponent,
     PochtaComponent,
-    IspolnitelComponent
+    IspolnitelComponent,
+    ZakazLayuoComponent,
+    LayuotComponent,
+    BalansComponent
   ],
   imports: [
     BrowserModule,
     SharedModule,
     AppRoutingModule,
+    HttpClientModule 
   
   ],
   exports:[],
