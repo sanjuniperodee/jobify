@@ -1,8 +1,8 @@
 <div [ngStyle]="{
-  background: 'url(' + background + ')',
+  'background': backgroundGradient + ', url(' + background + ')',
   'height': height,
   'background-repeat': repeatMode,
-  'background-size': backgroundSize,
+  'background-size': backgroundSize
 }">
 <header class="header">
   <div class="container-header">
@@ -14,10 +14,19 @@
        <a href="" class="link">Связаться</a>
      </nav>
      <div class="nav-reg">
-       <p routerLink="/registration" class="cursor-pointer pnav w-[135px]">Регистрация</p>
-       <p routerLink="/profile" class="cursor-pointer pnav w-[127px]" >Войти</p>
+       <p routerLink="/registration" class="cursor-pointer pnav w-[135px] bg-[#060043]">Регистрация</p>
+       <p routerLink="/profile" class="cursor-pointer pnav w-[127px]  bg-white text-black " >Войти</p>
      </div>
+  </div>
+  <div style="display: flex; justify-content: center; width: 100%;">
+    <hr style="background: rgba(255, 255, 255, 0.16) ; width: 90%; "> 
   </div>
  </header>
 </div>
 <ng-content></ng-content>
+<!-- <div [ngStyle]="{
+  background: 'url(' + background + '), ' + backgroundGradient,
+   'height': height,
+   'background-repeat': repeatMode,
+   'background-size': backgroundSize,
+ }" -->

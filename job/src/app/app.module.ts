@@ -19,6 +19,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { ZakazLayuoComponent } from './layuot zakaz/zakazlayuot.component';
 import { LayuotComponent } from './layuot ispolnitel/layuot.component';
 import { BalansComponent } from './balans/balans.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatButtonModule } from '@angular/material/button';
+import { MatDialogModule } from '@angular/material/dialog';
+
 
 
 
@@ -44,7 +48,10 @@ import { BalansComponent } from './balans/balans.component';
     BrowserModule,
     SharedModule,
     AppRoutingModule,
-    HttpClientModule 
+    HttpClientModule,
+    BrowserAnimationsModule,
+    MatButtonModule,
+    MatDialogModule
   
   ],
   exports:[],

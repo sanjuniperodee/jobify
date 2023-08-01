@@ -10,4 +10,5 @@ export class HeaderComponent {
   @Input() height: string = "100px";
   @Input() repeatMode: string = "no-repeat";
   @Input() backgroundSize: string = "cover";
+  @Input() backgroundGradient: string = "linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.0))";
 }
