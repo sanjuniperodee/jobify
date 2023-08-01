@@ -1,0 +1,48 @@
+.h2-text{
+    color: #000;
+    font-size: 24px;
+    font-weight: 700;
+   
+}
+
+.p-text{
+    color: #000;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.btn{
+    width: 503px;
+    height: 57px;
+    border-radius: 42px;
+    background: #060043;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.input{
+    margin-top: 31px;
+    width: 604px;
+    height: 75px;
+    flex-shrink: 0;
+    border-radius: 9px;
+    border: 1px solid #000;
+    background: #FFF;
+}
+
+.polzyn{
+    position: relative;
+}
+
+.btn-polzyn{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background:#060043;
+    border-radius: 48px;
+    
+
+
+}

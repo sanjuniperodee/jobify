@@ -17,15 +17,17 @@ export class OfferComponent {
         content: 'This is a sample modal content.',
       };
 
-      dialogConfig.width = '500px'; // Set the width of the modal
-      dialogConfig.height = '300px';
+      dialogConfig.width = '700px'; // Set the width of the modal
+      dialogConfig.height = '950px';
       dialogConfig.position = { top: '-1797px', left: '505px' };
 
 
       const dialogRef = this.dialog.open(ModalComponent,dialogConfig);
-  
-      dialogRef.afterClosed().subscribe(result => {
-        console.log('Modal closed with result:', result);
+
+      dialogRef.backdropClick().subscribe(() => {
+        dialogRef.close();
       });
+  
+      
     }
 }
