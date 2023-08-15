@@ -17,9 +17,9 @@ export class OfferComponent {
         content: 'This is a sample modal content.',
       };
 
-      dialogConfig.width = '700px'; // Set the width of the modal
-      dialogConfig.height = '950px';
-      dialogConfig.position = { top: '-1797px', left: '505px' };
+      // dialogConfig.width = '350px'; 
+      // dialogConfig.height = '400px';
+      
 
 
       const dialogRef = this.dialog.open(ModalComponent,dialogConfig);
