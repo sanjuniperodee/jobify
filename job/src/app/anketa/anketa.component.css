@@ -1,0 +1,23 @@
+.text{
+    color: #060043;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.text-h2{
+    color: #060043;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.p-text{
+    color: #060043;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.lin{
+    width: 497.122px;
+    height: 1px;
+    background: #060043;
+}

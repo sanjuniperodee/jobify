@@ -1,4 +1,4 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 
@@ -9,7 +9,8 @@ import { Observable } from 'rxjs';
 
 export class UserService {
 
-    private apiUrl = 'http://192.168.0.10:8000'; // Замените на ваш URL сервера API
+
+    private apiUrl = 'http://172.20.10.5:81'; // Замените на ваш URL сервера API
   
     constructor(private http: HttpClient) { }
   
@@ -17,6 +18,11 @@ export class UserService {
     getUser(): Observable<any> {
       const url = `${this.apiUrl}/user` // Замените на нужный URL для вашего сервера API
       return this.http.get<any>(url);
+    }
 
+    login(body:any): Observable<any> {
+      const headers = new HttpHeaders({'Content-Type': 'application/json'})
+      const url = `${this.apiUrl}/login` 
+      return this.http.post<any>(url, body, {headers})
     }
   }

@@ -22,6 +22,7 @@ import { BalansComponent } from './balans/balans.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDialogModule } from '@angular/material/dialog';
+import { AnketaComponent } from './anketa/anketa.component';
 
 
 
@@ -42,7 +43,8 @@ import { MatDialogModule } from '@angular/material/dialog';
     IspolnitelComponent,
     ZakazLayuoComponent,
     LayuotComponent,
-    BalansComponent
+    BalansComponent,
+    AnketaComponent
   ],
   imports: [
     BrowserModule,
