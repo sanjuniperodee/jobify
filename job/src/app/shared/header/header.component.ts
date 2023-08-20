@@ -25,9 +25,9 @@ export class HeaderComponent {
       content: 'This is a sample modal content.',
     };
 
-    dialogConfig.width = '500px'; // Set the width of the modal
-    dialogConfig.height = '350px';
-    dialogConfig.position = { top: '-455%', left: '35%' };
+    // dialogConfig.width = '500px'; // Set the width of the modal
+    // dialogConfig.height = '350px';
+    // dialogConfig.position = { top: '-455%', left: '35%' };
 
 
     const dialogRef = this.dialog.open(UserComponent,dialogConfig);

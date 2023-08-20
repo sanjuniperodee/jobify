@@ -15,6 +15,8 @@ import { LayuotComponent } from './layuot ispolnitel/layuot.component';
 import { ZakazLayuoComponent } from './layuot zakaz/zakazlayuot.component';
 import { BalansComponent } from './balans/balans.component';
 import { AnketaComponent } from './anketa/anketa.component';
+import { OtklikComponent } from './otklik/otklik.component';
+import { IspolnitelUserComponent } from './profile ispolnitela/ispolnitel.component';
 
 const routes: Routes = [
       { path: '', component: HomeComponent },
@@ -29,7 +31,9 @@ const routes: Routes = [
       {path:'layuot', component:LayuotComponent},
       {path:'chat',component:ZakazLayuoComponent},
       {path:'balans',component:BalansComponent},
-      {path:'anketa',component:AnketaComponent}
+      {path:'anketa',component:AnketaComponent},
+      {path:'otklik',component:OtklikComponent},
+      {path:'ispoluser',component:IspolnitelUserComponent}
 ];
 
 @NgModule({

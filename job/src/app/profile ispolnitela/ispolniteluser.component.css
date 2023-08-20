@@ -1,0 +1,61 @@
+.nav{
+    color: #000;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.nav-border{
+    border-top: 1px solid rgba(0, 0, 0, 0.29);
+}
+
+.h2-text{
+    color: #000;
+    font-size: 32.577px;
+    font-weight: 600;
+}
+
+.otziv{
+    color: #848484;
+    font-size: 23.269px;
+    font-weight: 600;
+}
+
+.status{
+    color: #000;
+    font-size: 23.205px;
+    font-weight: 600;
+}
+
+.title{
+    color: #000;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.desc{
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.desc2{
+    color: #000;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.number{
+    color: #5C5C5C;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.hr{
+    border: 1px solid #060043;
+}
+
+.desc4{
+    color: #848484;
+    font-size: 14px;
+    font-weight: 500;
+}

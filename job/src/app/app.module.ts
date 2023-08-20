@@ -23,6 +23,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDialogModule } from '@angular/material/dialog';
 import { AnketaComponent } from './anketa/anketa.component';
+import { OtklikComponent } from './otklik/otklik.component';
+import { IspolnitelUserComponent } from './profile ispolnitela/ispolnitel.component';
 
 
 
@@ -44,7 +46,9 @@ import { AnketaComponent } from './anketa/anketa.component';
     ZakazLayuoComponent,
     LayuotComponent,
     BalansComponent,
-    AnketaComponent
+    AnketaComponent,
+    OtklikComponent,
+    IspolnitelUserComponent
   ],
   imports: [
     BrowserModule,

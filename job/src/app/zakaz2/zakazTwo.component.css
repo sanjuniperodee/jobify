@@ -150,6 +150,19 @@ input[type="checkbox"].checkbox {
     background: #060043;
   }
 
+  .textarea{
+    color: rgba(0, 0, 0, 0.28);
+    font-size: 22px;
+    font-weight: 600;
+    padding: 16px;
+  }
+
+  .name{
+    color: #000;
+    font-size: 34px;
+    font-weight: 600;
+  }
+
  
 
   
