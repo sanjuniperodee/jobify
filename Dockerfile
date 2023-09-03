@@ -5,15 +5,15 @@ COPY package*.json /app/
 COPY ./ /app/
 
 
+RUN npm install -g @angular/cli
 RUN npm install
-RUN npm run build
+RUN npm run build 
 
-
-EXPOSE 3000
+EXPOSE 4200
 
 
 # start app
-CMD ["npm", "start"]
+CMD ["ng", "serve","--host=0.0.0.0"]
 
 #docker build -t job/job-front .
-#docker run -it -p 3000:3000 -d job/job-front
+#docker run -it -p 4200:4200 -d job/job-front
