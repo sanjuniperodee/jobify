@@ -2,74 +2,20 @@
     <p class="job-title mb-[1.18rem]">Недавние вакансии</p>
     <p class="job-p">Популярные вакансии</p>
 </div>
-<div class="job-container">
+<div *ngFor="let item of data" class="job-container">
     <div class="job-wrap mt-[90px]">
         <img src="" alt="" class="job-img">
         <div class="wrap-wrap">
-            <p class="wrap-text">Digital-маркетолог</p>
-            <p class="wrap-p pt-[19px]">Креативное агенство</p>
+            <p class="wrap-text">{{item.content_work}}</p>
+            <p class="wrap-p pt-[19px]">{{item.company}}</p>
         </div>
         <div class="geo pt-[60px]">
             <img src="/assets/icon/mdi_location.svg" alt="" class="w-[24px] h-[24px]">
-            <p>Алматы</p>
+            <p>{{item.location}}</p>
         </div>
-        <div class="valuable ml-[5.93rem] mr-[8.68rem] pt-[60px]">$3500-$4000</div>
+        <div class="valuable ml-[5.93rem] mr-[8.68rem] pt-[60px]">{{item.price}}₸</div>
         <div class="text-center">
-            <button class="job-btn">Подробнее</button>
-            <p class="pt-[19px]">7 дней назад</p>
-        </div>
-    </div>
-
-
-    <div class="job-wrap mt-[150px]">
-        <img src="" alt="" class="job-img">
-        <div class="wrap-wrap">
-            <p class="wrap-text">Digital-маркетолог</p>
-            <p class="wrap-p pt-[19px]">Креативное агенство</p>
-        </div>
-        <div class="geo pt-[60px]">
-            <img src="/assets/icon/mdi_location.svg" alt="" class="w-[24px] h-[24px]">
-            <p>Алматы</p>
-        </div>
-        <div class="valuable ml-[5.93rem] mr-[8.68rem] pt-[60px]">$3500-$4000</div>
-        <div class="text-center">
-            <button class="job-btn">Подробнее</button>
-            <p class="pt-[19px]">7 дней назад</p>
-        </div>
-    </div>
-
-
-    <div class="job-wrap mt-[150px]">
-        <img src="" alt="" class="job-img">
-        <div class="wrap-wrap">
-            <p class="wrap-text">Digital-маркетолог</p>
-            <p class="wrap-p pt-[19px]">Креативное агенство</p>
-        </div>
-        <div class="geo pt-[60px]">
-            <img src="/assets/icon/mdi_location.svg" alt="" class="w-[24px] h-[24px]">
-            <p>Алматы</p>
-        </div>
-        <div class="valuable ml-[5.93rem] mr-[8.68rem] pt-[60px]">$3500-$4000</div>
-        <div class="text-center">
-            <button class="job-btn">Подробнее</button>
-            <p class="pt-[19px]">7 дней назад</p>
-        </div>
-    </div>
-
-
-    <div class="job-wrap mt-[150px] mb-[14.43rem]">
-        <img src="" alt="" class="job-img">
-        <div class="wrap-wrap">
-            <p class="wrap-text">Digital-маркетолог</p>
-            <p class="wrap-p pt-[19px]">Креативное агенство</p>
-        </div>
-        <div class="geo pt-[60px]">
-            <img src="/assets/icon/mdi_location.svg" alt="" class="w-[24px] h-[24px]">
-            <p>Алматы</p>
-        </div>
-        <div class="valuable ml-[5.93rem] mr-[8.68rem] pt-[60px]">$3500-$4000</div>
-        <div class="text-center">
-            <button class="job-btn">Подробнее</button>
+            <button class="job-btn"><a [routerLink]="['/offer', item.id]">Подробнее</a></button>
             <p class="pt-[19px]">7 дней назад</p>
         </div>
     </div>
