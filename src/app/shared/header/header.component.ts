@@ -1,6 +1,8 @@
 import { Component, Input } from '@angular/core';
 import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
 import { UserComponent } from 'src/app/registrtion.user/user.component';
+import { NgbModalConfig, NgbModal } from '@ng-bootstrap/ng-bootstrap';
+
 
 @Component({
   selector: 'app-header',
@@ -14,28 +16,15 @@ export class HeaderComponent {
   @Input() backgroundSize: string = "cover";
   @Input() backgroundGradient: string = "linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.0))";
 
-  constructor(private dialog: MatDialog){}
+  constructor(config: NgbModalConfig, private modalService: NgbModal){}
+  menuOpen: boolean = false;
 
-
-  
-  openModal() {
-    const dialogConfig = new MatDialogConfig();
-    dialogConfig.data = {
-      title: 'My Modal',
-      content: 'This is a sample modal content.',
-    };
-
-    // dialogConfig.width = '500px'; // Set the width of the modal
-    // dialogConfig.height = '350px';
-    // dialogConfig.position = { top: '-455%', left: '35%' };
-
-
-    const dialogRef = this.dialog.open(UserComponent,dialogConfig);
-
-    dialogRef.afterClosed().subscribe(() => {
- 
-    });
-
-    
+  toggleMenu() {
+    this.menuOpen = !this.menuOpen;
   }
+
+  open(content:any) {
+    this.modalService.open(content);
+  }
+
 }

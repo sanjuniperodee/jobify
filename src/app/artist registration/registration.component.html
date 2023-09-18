@@ -13,89 +13,73 @@
    </div>
 
    <div class="ml-[73px]">
-        <h2 class="h2-title mt-[142px]">Как вы работаете?</h2>
+        <h2 class="h2-title mt-[142px]">Введите данные </h2>
    </div>
-   <div class="ml-[102px]">
-     <div class="flex gap-[13px] items-center mb-[28px] mt-[83px]">
-            <svg xmlns="http://www.w3.org/2000/svg" width="43" height="43" viewBox="0 0 43 43" fill="none">
-                <circle cx="21.5" cy="21.5" r="18.5" fill="white" stroke="black" stroke-width="6"/>
-            </svg>
-        <label for="" class="label">На  себя, я частный специалист</label>
+   <div class="ml-[102px]" *ngIf="activeStep === 1">
+     <div class="grid gap-[13px] items-center mb-[28px] mt-[83px]">
+       <input type="text" class="input mb-[44px] pl-[10px]" placeholder="Фамилия">
+       <input type="text" class="input mb-[44px] pl-[10px]" placeholder="Имя">
      </div>
 
-     <div class="flex gap-[13px] items-center">
-            <svg xmlns="http://www.w3.org/2000/svg" width="43" height="43" viewBox="0 0 43 43" fill="none">
-                <circle cx="21.5" cy="21.5" r="18.5" fill="white" stroke="black" stroke-width="6"/>
-            </svg>
-            <label for="" class="label">Я ИП или представитель компании </label>
-      </div>
-      <div class="text-right mt-[98px] mr-[94px] mb-[154px]"><button class="reg-btn">Далее</button></div>
+      <div class="text-right mt-[50px] mr-[94px] mb-[154px]"><button class="reg-btn" (click)="nextStep()">Далее</button></div>
    </div>
 
-   <div class="ml-[73px]">
-     <h2 class="h2-title mb-[17px]">Как вас зовут?</h2>
-     <p class="regis-p mb-[44px]"> Укажите ваши ФИО  как в паспорте, это важно для проверки</p>
+   <div>
+     <div class="ml-[73px]">
+       <h2 class="h2-title mb-[17px]">Как вас зовут?</h2>
+       <p class="regis-p mb-[44px]"> Укажите ваши ФИО  как в паспорте, это важно для проверки</p>
 
-     <input type="text" class="input mb-[44px]" placeholder="Фамилия">
-     <input type="text" class="input mb-[44px]" placeholder="Имя">
-     <input type="text" class="input" placeholder="Отчество">
+       <input type="text" class="input mb-[44px]" placeholder="Фамилия">
+       <input type="text" class="input mb-[44px]" placeholder="Имя">
+       <input type="text" class="input" placeholder="Отчество">
+     </div>
+
+     <div class="flex items-center ml-[73px] mt-[63px]">
+       <input type="checkbox"  id="soglawenie"class="soglawenie">
+       <label for="soglawenie"  class="regis-p">Принимаю публичную оферту, пользовательское соглашение</label>
+     </div>
+
+
+     <div class="mx-[73px] flex justify-between my-[124px]">
+       <button class="reg-btn-nazad" (click)="prevStep()">Назад</button>
+       <button class="reg-btn-dalee" (click)="nextStep()">Далее</button>
+     </div>
    </div>
 
-   <div class="flex items-center ml-[73px] mt-[63px]">
-     <input type="checkbox"  id="soglawenie"class="soglawenie">
-     <label for="soglawenie"  class="regis-p">Принимаю публичную оферту, пользовательское соглашение</label>
-   </div>
+  <div>
+    <div class="ml-[73px]">
+      <h2 class="h2-title mb-[17px]">Чем вы занимаетесь?</h2>
+      <p class="regis-p mb-[44px]"> Укажите все ваши специальности- так найдется больше подходящих заказов</p>
+      <input type="text" class="input mb-[44px]" placeholder="Поиск">
 
 
-   <div class="mx-[73px] flex justify-between my-[124px]">
-    <button class="reg-btn-nazad">Назад</button>
-    <button class="reg-btn-dalee">Далее</button>
-   </div>
-
-   <div class="ml-[73px]">
-        <h2 class="h2-title mb-[17px]">Чем вы занимаетесь?</h2>
-        <p class="regis-p mb-[44px]"> Укажите все ваши специальности- так найдется больше подходящих заказов</p>
-        <input type="text" class="input mb-[44px]" placeholder="Поиск">
-
-       
-        <div class="">
-            <div class="seleckt-btn">
-                <button class="btn-vacans" style="width: 179px;">Репетитор</button>
-                <button class="btn-vacans">Артист</button>
-                <button class="btn-vacans" style="width: 218px;">Мастер красоты</button>
-                <button class="btn-vacans" style="width: 167px;">Ветеринар</button>
-                <button class="btn-vacans" style="width: 209px;">IT-специалист</button>
-            </div>
-    
-            <div class="mt-[20px] seleckt-btn">
-                <button class="btn-vacans" style="width: 123px;">Юрист</button>
-                <button class="btn-vacans" style="width: 146px;">Бухгалтер</button>
-                <button class="btn-vacans" style="width: 196px;">Автоинструктор</button>
-                <button class="btn-vacans" style="width: 255px;">Спортивный тренер</button>
-            </div>
-
-            <p class="seleckt-text mt-[36px]">Укажите ваши специальности</p>
+      <div class="">
+        <div class="seleckt-btn">
+          <button class="btn-vacans" style="width: 179px;">Репетитор</button>
+          <button class="btn-vacans">Артист</button>
+          <button class="btn-vacans" style="width: 218px;">Мастер красоты</button>
+          <button class="btn-vacans" style="width: 167px;">Ветеринар</button>
+          <button class="btn-vacans" style="width: 209px;">IT-специалист</button>
         </div>
-   </div>
 
-   <div class="mx-[73px] flex justify-between my-[124px]">
-    <button class="reg-btn-nazad">Назад</button>
-    <button class="reg-btn-dalee">Далее</button>
-   </div>
+        <div class="mt-[20px] seleckt-btn">
+          <button class="btn-vacans" style="width: 123px;">Юрист</button>
+          <button class="btn-vacans" style="width: 146px;">Бухгалтер</button>
+          <button class="btn-vacans" style="width: 196px;">Автоинструктор</button>
+          <button class="btn-vacans" style="width: 255px;">Спортивный тренер</button>
+        </div>
+
+        <p class="seleckt-text mt-[36px]">Укажите ваши специальности</p>
+      </div>
+    </div>
+
+    <div class="mx-[73px] flex justify-between my-[124px]">
+      <button class="reg-btn-nazad" (click)="prevStep()">Назад</button>
+      <button class="reg-btn-dalee" (click)="nextStep()">Далее</button>
+    </div>
+  </div>
 
 
-   <div class="ml-[73px]">
-    <h2 class="h2-title mb-[24px]">Ваш адрес</h2>
-    <input type="text" class="input mb-[24px]" placeholder="Укажите свой адрес">
-    <p class="regis-p mb-[44px]">Мы покажем больше заказов поблизости</p>
-
-    <div class="geo">карта</div>
-   </div>
-
-   <div class="mx-[73px] flex justify-between my-[124px]">
-    <button class="reg-btn-nazad">Назад</button>
-    <button class="reg-btn-dalee">Далее</button>
-   </div>
 
    <div class="ml-[73px]">
     <h2 class="h2-title ">Загрузите фото профиля</h2>
@@ -121,7 +105,7 @@
                 Загрузить фото или сделать селфи
             </div>
         </div>
-       
+
 
         <div class="foto-info">
             <h2 class="instruction-text mx-[42px] mt-[60px]">Каким должно быть фото</h2>
@@ -141,7 +125,7 @@
                         </div>
                     </div>
                 </div>
-               
+
             </div>
 
             <div class="mt-[40px] mb-[40px]">
