@@ -7,22 +7,35 @@ import { Component } from '@angular/core';
   styleUrls: ['./registration.component.css']
 })
 export class RegistrationComponent {
-  step1Completed = false;
-  step2Completed = false;
-  step3Completed = false;
-  activeStep = 1;
+  firstName: string = '';
+  lastName: string = '';
+  отчество: string = '';
+  activeStep:number = 1;
+  isNextButtonEnabled: boolean = false;
 
-  nextStep() {
-    if (this.activeStep === 1 && this.step1Completed) {
-      this.activeStep = 2;
-    } else if (this.activeStep === 2 && this.step2Completed) {
-      this.activeStep = 3;
+  goToStep(stepNumber:number){
+    const element = document.getElementById(`step${stepNumber}`)
+    if(element){
+      element.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest'})
+      this.activeStep = stepNumber
+      this.checkFormValidity();
     }
   }
 
-  prevStep() {
-    if (this.activeStep > 1) {
-      this.activeStep--;
+  goBack(){
+    if(this.activeStep >1){
+      this.goToStep(this.activeStep - 1);
+      this.checkFormValidity();
+    }
+  }
+
+
+
+  checkFormValidity() {
+    if (this.firstName !== '' && this.lastName !== '') {
+      this.isNextButtonEnabled = true;
+    } else {
+      this.isNextButtonEnabled = false;
     }
   }
 

@@ -26,6 +26,7 @@ import { AnketaComponent } from './anketa/anketa.component';
 import { OtklikComponent } from './otklik/otklik.component';
 import { IspolnitelUserComponent } from './profile ispolnitela/ispolnitel.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { FormsModule } from "@angular/forms";
 
 
 
@@ -59,8 +60,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     BrowserAnimationsModule,
     MatButtonModule,
     MatDialogModule,
-    NgbModule
-  
+    NgbModule,
+    FormsModule
+
   ],
   exports:[],
   providers: [],
