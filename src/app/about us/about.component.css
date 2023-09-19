@@ -1,6 +1,6 @@
 .bag-img{
     position: relative;
-   
+
     height: 600px;
     background-size: cover;
     background-position: center;
@@ -24,7 +24,7 @@ header{
     padding: 40px 0;
     gap: 200px;
     margin-left: 34%;
-    
+
 }
 
 .nav{
@@ -36,7 +36,7 @@ header{
 .nav-reg{
     display: flex;
     gap: 30px;
-   
+
 }
 
 .about{
@@ -94,7 +94,7 @@ header{
     width: 434px;
     height: 596px;
     background-color: #D9D9D9;
-    
+
 }
 
 .desc-icon{
@@ -219,7 +219,7 @@ header{
 
 .wrap-desc{
     width: 474px;
-    height: 462px;
+    height: 567px;
 }
 
 .wrap-desc1{
@@ -265,4 +265,159 @@ header{
     width: 100px;
     height: 86px;
     background-color: #060043;
+}
+
+.inf{
+  gap: 35px;
+  margin-top: 40px;
+}
+
+.vis{
+  margin-top: 50px;
+}
+
+/* Стили для устройств меньше 576px (xs) */
+@media (max-width: 576px) {
+  .general-desc{
+    gap: 30px;
+    display: grid;
+    margin-left: 29px;
+  }
+
+  .descr{
+    margin-left: 71px;
+  }
+
+  .desc-icon{
+    top: 79%;
+    left: 66%;
+  }
+
+  .img-desc{
+    width: 400px;
+    margin: 0 0;
+  }
+
+  .container-instruction{
+    display: grid;
+    gap: 16px;
+  }
+
+  .wrap-instruction{
+    width: 200px;
+    height: 215px;
+  }
+
+  .instruction-title{
+    padding-bottom: 1rem;
+    padding-top: 2rem;
+  }
+
+  .instruction-h2{
+    margin: 46px 10px 18px 0;
+  }
+}
+
+/* Стили для устройств от 576px до 767px (sm) */
+@media (min-width: 576px) and (max-width: 768px) {
+  .general-desc{
+    gap: 30px;
+    display: grid;
+  }
+
+  .descr{
+    margin-left: 71px;
+  }
+
+  .desc-icon{
+    top: 79%;
+    left: 66%;
+  }
+
+  .img-desc{
+    width: 400px;
+    margin: 0 13%;
+  }
+
+  .cont{
+    gap: 33px;
+    margin-left: 58px;
+  }
+
+  .wrap-desc{
+    width: 429px;
+  }
+
+  .wrap-desc2,.wrap-desc1{
+    height: 52%;
+  }
+
+  .container-instruction{
+    gap: 50px;
+    margin: 0 5%;
+    gap: 16px;
+  }
+
+  .instruction-h2{
+    margin: 40px 10px 18px 0;
+  }
+
+  .wrap-instruction{
+    width: 200px;
+    height: 215px;
+  }
+}
+
+
+/* Стили для устройств от 768px до 991px (md) */
+@media (min-width: 768px) and (max-width: 992px) {
+  .general-desc{
+    gap: 30px;
+  }
+
+  .container-instruction{
+    gap: 50px;
+    margin: 0 5%;
+  }
+
+  .descr{
+    margin-left: 71px;
+  }
+
+  .desc-icon{
+    top: 46%;
+    left: -7%;
+  }
+
+  .img-desc{
+    width: 380px;
+  }
+
+  .cont{
+    gap: 33px;
+    margin-left: 58px;
+  }
+
+  .wrap-desc{
+    width: 330px;
+    margin-right: 9%
+  }
+
+  .inf{
+    gap: 0px;
+    margin-top: 40px;
+    margin-left: 7%;
+  }
+}
+
+/* Стили для устройств от 992px до 1199px (lg) */
+@media (min-width: 992px) and (max-width: 1200px) {
+  .general-desc{
+    gap: 30px;
+  }
+}
+
+/* Стили для устройств 1200px и больше (xl) */
+@media (min-width: 1200px) {
+  /* Ваши стили для очень больших экранов здесь */
 }

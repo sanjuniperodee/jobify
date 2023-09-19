@@ -61,7 +61,7 @@
 
 .wpap-chec{
     width: 25px;
-    height: 25px;   
+    height: 25px;
 }
 
 .label-t{
@@ -113,15 +113,21 @@
     font-weight: 400;
 }
 
+.otklik{
+  display: grid;
+  margin: 21px -136px;
+}
+
 .time-vacans{
     color: #000;
-    text-align: center;
     font-size: 16px;
     font-weight: 400;
+    padding-left: 32px;
 }
 
 .vacancies-container{
     display: flex;
+  gap: 23px;
 }
 
 .vacans-wrap{
@@ -165,8 +171,178 @@
     text-align: center;
     padding: 13px;
 }
- 
+
 .active-str{
     background-color: #060043;;
     color: #FFF;
+}
+
+
+/* Стили для устройств меньше 576px (xs) */
+@media (max-width: 576px) {
+  .sort-wrap{
+    gap: 0px;
+    display: flex;
+    margin-top: 260px;
+    margin-bottom: 20px;
+  }
+
+  .job-container{
+    gap: 30px;
+    margin-left: 16px;
+    display: grid;
+  }
+
+  .filter-h2{
+    margin-right: 0;
+    margin-left: 0px;
+    font-size: 15px;
+
+  }
+  .filter-title{
+    margin-right: 0px;
+    font-size: 13px;
+  }
+
+  .vacans-info{
+    gap: 26px;
+  }
+
+  .img-vacans{
+    width: 110px;
+  }
+
+  .otklik{
+    margin-top: 24px;
+    margin-left: 10px;
+  }
+
+  .vacancies-container{
+    display: grid;
+  }
+
+  .filter-wrap{
+    width: 370px;
+  }
+}
+
+/* Стили для устройств от 576px до 767px (sm) */
+@media (min-width: 576px) and (max-width: 768px) {
+  .sort-wrap{
+    gap: 0px;
+  }
+
+  .job-container{
+    gap: 30px;
+    margin-left: 16px;
+  }
+
+  .filter-h2{
+    margin-right: 0;
+    margin-left: 35px;
+  }
+  .filter-title{
+    margin-right: 0px;
+  }
+
+  .vacans-info{
+    gap: 26px;
+  }
+
+  .img-vacans{
+    width: 110px;
+  }
+
+  .otklik{
+    margin-top: 24px;
+    margin-left: 10px;
+  }
+
+  .vacancies-container{
+    display: grid;
+  }
+
+  .filter-wrap{
+    width: 206px;
+  }
+}
+
+/* Стили для устройств от 768px до 991px (md) */
+@media (min-width: 768px) and (max-width: 992px) {
+  .sort-wrap{
+    gap: 0px;
+  }
+
+  .job-container{
+    gap: 47px;
+    margin-left: 33px;
+  }
+
+  .filter-h2{
+    margin-right: 40px;
+  }
+  .filter-title{
+    margin-right: 99px;
+  }
+
+  .vacans-info{
+    gap: 26px;
+  }
+
+  .img-vacans{
+    width: 110px;
+  }
+
+  .otklik{
+    margin-top: 24px;
+    margin-left: 10px;
+  }
+
+  .vacancies-container{
+    display: grid;
+  }
+
+}
+
+/* Стили для устройств от 992px до 1199px (lg) */
+@media (min-width: 992px) and (max-width: 1200px) {
+  .sort-wrap{
+    gap: 0px;
+  }
+
+  .job-container{
+    gap: 47px;
+    margin-left: 75px;
+  }
+
+  .filter-h2{
+    margin-right: 40px;
+  }
+  .filter-title{
+    margin-right: 99px;
+  }
+
+  .vacans-info{
+    gap: 56px;
+  }
+
+  .otklik{
+    margin-top: 50px;
+  }
+}
+
+/* Стили для устройств 1200px и больше (xl) */
+@media (min-width: 1200px) {
+  .sort-wrap{
+    gap: 143px;
+  }
+
+  .job-container{
+    gap: 47px;
+    margin-left: 75px;
+  }
+
+  .otklik{
+    margin-top: 50px;
+  }
 }
