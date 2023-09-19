@@ -41,10 +41,126 @@ input[type="text"]::placeholder{
 .input-container{
     border-radius: 10px;
     overflow: hidden;
-   
+
 }
-/* 
+/*
 .header-bag > app-header {
   position: relative;
   z-index: 2;
 } */
+
+@media (max-width: 576px) {
+  .title{
+    margin-top: 54px;
+    margin-left: 46px;
+  }
+
+  .input-container{
+    display: grid!important;
+  }
+
+  .input-bacg{
+    width: 25rem!important;
+    margin-left: 0px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+
+  .input-bacg2{
+    width: 21rem!important;
+    margin-left: 0px;
+    border-radius: 10px;
+    position: relative;
+  }
+
+  .long-input{
+    margin-left: 0;
+    margin-top: 60px;
+  }
+
+  .btn{
+    margin-top: 55px;
+    padding-left: 9px;
+    padding-right: 7px;
+    width: 62px;
+    margin-left: 0;
+    height: 49px;
+    position: absolute;
+    right: 42px;
+  }
+
+  .lin{
+    display: none;
+  }
+}
+
+/* Стили для устройств от 576px до 767px (sm) */
+@media (min-width: 576px) and (max-width: 768px) {
+  .title{
+    margin-top: 54px;
+    margin-left: 97px;
+  }
+
+  .input-container{
+    display: grid!important;
+  }
+
+  .input-bacg{
+    width: 25rem!important;
+    margin-left: 62px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+
+  .input-bacg2{
+    width: 24rem!important;
+    margin-left: 62px;
+    border-radius: 10px;
+  }
+
+  .long-input{
+    margin-left: 0;
+    margin-top: 60px;
+  }
+
+  .btn{
+    margin-top: 55px;
+    padding-left: 9px;
+    padding-right: 7px;
+    width: 62px;
+    margin-left: 0;
+    height: 49px;
+  }
+
+  .lin{
+    display: none;
+  }
+}
+
+/* Стили для устройств от 768px до 991px (md) */
+@media (min-width: 768px) and (max-width: 992px) {
+  .long-input{
+    margin-left: -144px;
+  }
+
+  .btn{
+    margin-right:14px ;
+  }
+}
+
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .long-input{
+    margin-left: 81px;
+    width: 80%;
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .long-input{
+    margin-left: 50px;
+    width: 80%;
+  }
+}
+

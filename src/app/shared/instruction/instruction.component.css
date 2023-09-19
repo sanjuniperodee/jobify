@@ -30,3 +30,59 @@
 .instruction-h2{
     margin: 152px 10px 18px 0;
 }
+
+/* Стили для устройств меньше 576px (xs) */
+@media (max-width: 576px) {
+  .container-instruction{
+    display: grid;
+    gap: 15px;
+  }
+
+  .wrap-instruction{
+    width: 176px;
+    height: 228px;
+  }
+
+  .instruction-h2{
+    margin-top: 50px;
+  }
+
+  .instruction-title{
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
+  }
+}
+
+/* Стили для устройств от 576px до 767px (sm) */
+@media (min-width: 576px) and (max-width: 768px) {
+  .container-instruction{
+    gap: 15px;
+  }
+
+  .wrap-instruction{
+    width: 176px;
+  }
+}
+
+/* Стили для устройств от 768px до 991px (md) */
+@media (min-width: 768px) and (max-width: 992px) {
+  .container-instruction{
+    gap: 19px;
+  }
+
+  .wrap-instruction{
+    width: 235px;
+  }
+}
+
+/* Стили для устройств от 992px до 1199px (lg) */
+@media (min-width: 992px) and (max-width: 1200px) {
+  .container-instruction{
+    gap: 49px;
+  }
+}
+
+/* Стили для устройств 1200px и больше (xl) */
+@media (min-width: 1200px) {
+  /* Ваши стили для очень больших экранов здесь */
+}

@@ -68,14 +68,78 @@
     margin-bottom: 70px;
 }
 
+/* Стили для устройств меньше 576px (xs) */
+@media (max-width: 576px) {
+  .categories-container{
+    padding-top: 0;
+  }
+  .wrap-general{
+    margin:0 5%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
 
-  
-  
+  .wrap-categories{
+    width: 210px;
+  }
+}
+
+/* Стили для устройств от 576px до 767px (sm) */
+@media (min-width: 576px) and (max-width: 768px) {
+
+  .categories-container{
+    padding-top: 0;
+  }
+  .wrap-general{
+    margin:0 3%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+
+  .wrap-categories{
+    width: 200px;
+  }
+}
+
+/* Стили для устройств от 768px до 991px (md) */
+@media (min-width: 768px) and (max-width: 992px) {
+  .wrap-general{
+    margin:0 4%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 34px;
+  }
+
+  .btn-categorias{
+    margin-top: 50px;
+    margin-left: 28px;
+  }
+}
+
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .wrap-general{
+    margin:0 7%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+
+@media (min-width: 1200px) {
+ .wrap-general{
+   margin:0 7%;
+ }
+}
 
 
 
-  
-   
 
-  
-  
+
+
+
+
+
+

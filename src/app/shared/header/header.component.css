@@ -83,6 +83,13 @@ header{
   margin: 10px 0;
 }
 
+@media (max-width: 576px) {
+  header{
+    padding: 0 40px;
+  }
+
+}
+
 @media screen and (max-width: 768px) {
   .burger {
     display: flex;
@@ -102,10 +109,12 @@ header{
 
   .nav.active {
     width: 100%;
+    height: 100%;
     background: #333;
     top: 5px;
     left: 0;
     padding: 10px 0;
+    z-index: 1;
   }
 }
 
@@ -115,7 +124,7 @@ header{
   }
   .container-header{
     gap: 0!important;
-    margin: 0 15px;
+    margin: 0 8px;
   }
 
   .nav{
@@ -136,8 +145,25 @@ header{
     gap: 8px;
   }
 
+  header{
+    padding: 0 70px;
+  }
+  .nav-reg{
+    gap: 10px;
+  }
+
   .container-header{
     gap: 0!important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container-header{
+    gap: 63px;
+  }
+
+  .nav{
+    gap: 16px;
   }
 }
 

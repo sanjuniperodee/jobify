@@ -49,3 +49,75 @@ input[type="text"]::placeholder {
     background-color: #1E157D;
     padding: 0px 7px;
 }
+
+/* Стили для устройств меньше 576px (xs) */
+@media (max-width: 576px) {
+  .footer{
+    height: auto;
+  }
+  .footer-container{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 0px;
+    row-gap: 0px;
+    margin: 0 68px;
+    padding-bottom: 15px;
+  }
+
+  .footer-h2{
+    padding-top: 60px;
+    margin-bottom: 21px;
+  }
+}
+
+/* Стили для устройств от 576px до 767px (sm) */
+@media (min-width: 576px) and (max-width: 768px) {
+  .footer{
+    height: auto;
+  }
+  .footer-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 0px;
+    row-gap: 0px;
+    margin: 0 68px;
+    padding-bottom: 15px;
+  }
+
+  .footer-h2{
+    padding-top: 60px;
+    margin-bottom: 21px;
+  }
+}
+
+/* Стили для устройств от 768px до 991px (md) */
+@media (min-width: 768px) and (max-width: 992px) {
+  .footer{
+    height: auto;
+  }
+  .footer-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 0px;
+    row-gap: 0px;
+    margin: 0 68px;
+    padding-bottom: 15px;
+  }
+
+  .footer-h2{
+    padding-top: 60px;
+    margin-bottom: 21px;
+  }
+}
+
+/* Стили для устройств от 992px до 1199px (lg) */
+@media (min-width: 992px) and (max-width: 1200px) {
+  .footer-container{
+    gap: 48px;
+  }
+}
+
+/* Стили для устройств 1200px и больше (xl) */
+@media (min-width: 1200px) {
+  /* Ваши стили для очень больших экранов здесь */
+}

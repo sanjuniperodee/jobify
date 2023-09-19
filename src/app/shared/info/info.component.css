@@ -79,7 +79,7 @@
     width: 434px;
     height: 596px;
     background-color: #D9D9D9;
-    
+
 }
 
 .desc-icon{
@@ -165,4 +165,107 @@
 
 .str:active{
     background-color: #060043;
+}
+
+/* Стили для устройств меньше 576px (xs) */
+@media (max-width: 576px) {
+  .general-desc{
+    gap: 30px;
+    display: grid;
+  }
+
+  .descr{
+    margin-left: 71px;
+  }
+
+  .desc-icon{
+    top: 79%;
+    left: 66%;
+  }
+
+  .img-desc{
+    width: 400px;
+    margin: 0 13%;
+  }
+}
+
+/* Стили для устройств от 576px до 767px (sm) */
+@media (min-width: 576px) and (max-width: 768px) {
+  .general-desc{
+    gap: 30px;
+    display: grid;
+  }
+
+  .descr{
+    margin-left: 71px;
+  }
+
+  .desc-icon{
+    top: 79%;
+    left: 66%;
+  }
+
+  .img-desc{
+    width: 400px;
+    margin: 0 13%;
+  }
+
+  .cont{
+    gap: 33px;
+    margin-left: 58px;
+  }
+
+  .wrap-desc{
+    width: 429px;
+  }
+
+  .wrap-desc2,.wrap-desc1{
+    height: 52%;
+  }
+}
+
+/* Стили для устройств от 768px до 991px (md) */
+@media (min-width: 768px) and (max-width: 992px) {
+  .general-desc{
+    gap: 30px;
+  }
+
+  .descr{
+    margin-left: 71px;
+  }
+
+  .desc-icon{
+    top: 46%;
+    left: -7%;
+  }
+
+  .img-desc{
+    width: 380px;
+  }
+
+  .cont{
+    gap: 33px;
+    margin-left: 58px;
+  }
+
+  .wrap-desc{
+    width: 330px;
+    margin-right: 9%
+  }
+
+  .footer-container{
+
+  }
+}
+
+/* Стили для устройств от 992px до 1199px (lg) */
+@media (min-width: 992px) and (max-width: 1200px) {
+  .general-desc{
+    gap: 30px;
+  }
+}
+
+/* Стили для устройств 1200px и больше (xl) */
+@media (min-width: 1200px) {
+  /* Ваши стили для очень больших экранов здесь */
 }
