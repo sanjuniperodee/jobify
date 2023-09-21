@@ -1,8 +1,9 @@
 import { Component, OnInit} from '@angular/core';
 import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
 import { ActivatedRoute } from '@angular/router';
-import { ModalComponent } from '../modalka/modalka.component';
+
 import {Service} from "../service";
+import {NgbModal, NgbModalConfig} from "@ng-bootstrap/ng-bootstrap";
 
 @Component({
   selector: 'app-offer',
@@ -10,7 +11,7 @@ import {Service} from "../service";
   styleUrls: ['./offer.component.css']
 })
 export class OfferComponent implements OnInit {
-  constructor(private route: ActivatedRoute, private dialog:MatDialog, private apiService: Service) {}
+  constructor(private route: ActivatedRoute, private dialog:MatDialog, private apiService: Service, config: NgbModalConfig, private modalService: NgbModal) {}
   data: any
   jobId: string= "";
 
@@ -26,24 +27,9 @@ export class OfferComponent implements OnInit {
     });
   }
 
-    openModal() {
-      const dialogConfig = new MatDialogConfig();
-      dialogConfig.data = {
-        title: 'My Modal',
-        content: 'This is a sample modal content.',
-      };
-
-      // dialogConfig.width = '350px';
-      // dialogConfig.height = '400px';
+  open(content:any) {
+    this.modalService.open(content, { size: 'lg' });
+  }
 
 
-
-      const dialogRef = this.dialog.open(ModalComponent,dialogConfig);
-
-      dialogRef.backdropClick().subscribe(() => {
-        dialogRef.close();
-      });
-
-
-    }
 }

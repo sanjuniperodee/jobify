@@ -53,20 +53,20 @@
                     <p class="offer-text leading-10 text-end">12 Сент. 2020</p>
                 </div>
             </div>
-            <button class="decck-btn mt-[30px]" (click)="openModal()">Откликнуться</button>
+            <button class="decck-btn mt-[30px]" (click)="open(content)" >Откликнуться</button>
         </div>
 
 
         <div class="about-us -mt-[56px]">
-                <h2 class="desck-h2 mb-[22px]">Информация о компании</h2>
+                <h2 class="desck-h2 mt-[70px] mb-[22px]">Информация о компании</h2>
                 <p class="about-p mb-[22px]">Лалала</p>
-                <p class="info-text ">Lorem ipsum dolor sit amet  <br>consectetur adipisicing elit. <br>
+                <p class="info-text mt-[20px]">Lorem ipsum dolor sit amet  <br>consectetur adipisicing elit. <br>
                      Lorem ipsum dolor sit amet <br> consectetur
                 </p>
         </div>
 
 
-        <div class="flex gap-[34px] leading-[40px] -mt-[80px]">
+        <div class="flex gap-[34px] leading-[40px] mt-[60px]">
             <div class="">
                 <p class="about-p">Название:</p>
                 <p class="about-p">Web:</p>
@@ -81,6 +81,27 @@
         </div>
 
     </div>
+
+
+  <ng-template #content let-c="close" let-d="dismiss">
+    <div class="modal-header">
+      <h4 class="modal-title" id="modal-basic-title">Отклик</h4>
+      <button type="button" class="btn-close" aria-label="Close" (click)="d('Cross click')"></button>
+    </div>
+    <div class="modal-body">
+      <h2>Стоимость услуги</h2>
+      <p class="mb-[10px]">Укажите примернно, о точнной сумме можно договориться с клиентом потом</p>
+      <input class="w-[100%] rounded mb-[15px]" style="border: 1px solid black">
+
+      <h2 class="mb-[10px]">Предложение или вопрос клиенту</h2>
+      <textarea class="w-[100%] rounded mb-[15px]" style="border: 1px solid black"></textarea>
+
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-outline-dark" (click)="c('Save click')">Откликнуться</button>
+      <button type="button" class="btn btn-outline-dark" (click)="c('Save click')">Закрыть</button>
+    </div>
+  </ng-template>
 </div>
 
 <app-footer></app-footer>

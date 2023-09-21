@@ -22,7 +22,7 @@ const routes: Routes = [
       { path: '', component: HomeComponent },
       { path:'about', component: AboutComponent},
       { path:'job', component: GetjComponent},
-      { path: 'offer/:id', component: OfferComponent },
+      { path: 'offer', component: OfferComponent },
       {path:'registration', component: RegistrationComponent},
       {path:'zakaz', component:ZakazComponent},
       {path:'zakaz2', component:ZakazTwoComponent},

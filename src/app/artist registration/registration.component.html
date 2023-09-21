@@ -12,20 +12,20 @@
         </div>
    </div>
 
-   <div class="ml-[73px]">
+   <div class="ml-[73px] gena3">
         <h2 class="h2-title mt-[142px]">Введите данные </h2>
    </div>
-   <div class="ml-[102px]" id="step1">
-     <div class="grid gap-[13px] items-center mb-[28px] mt-[83px]">
-       <input type="text" class="input mb-[44px] pl-[20px]" placeholder="Фамилия" [(ngModel)]="firstName" (input)="checkFormValidity()">
-       <input type="text" class="input mb-[44px] pl-[20px]" placeholder="Имя" [(ngModel)]="lastName" (input)="checkFormValidity()">
+   <div class="ml-[102px] gena" id="step1">
+     <div class="grid gap-[13px] items-center mb-[28px] mt-[83px] gena2">
+       <input type="text" class="input mb-[44px] pl-[20px]" placeholder="login" [(ngModel)]="firstName" (input)="checkFormValidity()">
+       <input type="text" class="input mb-[44px] pl-[20px]" placeholder="password" [(ngModel)]="lastName" (input)="checkFormValidity()">
      </div>
 
-      <div class="text-right mt-[50px] mr-[94px] mb-[154px]"><button class="reg-btn" (click)="goToStep(2)" [disabled]="!isNextButtonEnabled">Далее</button></div>
+      <div class="text-right mt-[50px] mr-[94px] mb-[154px] gena4"><button class="reg-btn" (click)="goToStep(2)" [disabled]="!isNextButtonEnabled">Далее</button></div>
    </div>
 
    <div id="step2">
-     <div class="ml-[73px]">
+     <div class="ml-[73px] gena3">
        <h2 class="h2-title mb-[17px]">Как вас зовут?</h2>
        <p class="regis-p mb-[44px]"> Укажите ваши ФИО  как в паспорте, это важно для проверки</p>
 
@@ -34,20 +34,20 @@
        <input type="text" class="input pl-[20px]" placeholder="Отчество">
      </div>
 
-     <div class="flex items-center ml-[73px] mt-[63px]">
+     <div class="flex items-center ml-[73px] mt-[63px] gena5">
        <input type="checkbox"  id="soglawenie"class="soglawenie">
        <label for="soglawenie"  class="regis-p">Принимаю публичную оферту, пользовательское соглашение</label>
      </div>
 
 
-     <div class="mx-[73px] flex justify-between my-[124px]">
+     <div class="mx-[73px] flex justify-between my-[124px] gena6">
        <button class="reg-btn-nazad" (click)="goBack()">Назад</button>
        <button class="reg-btn-dalee" (click)="goToStep(3)" [disabled]="!isNextButtonEnabled">Далее</button>
      </div>
    </div>
 
   <div id="step3">
-    <div class="ml-[73px]">
+    <div class="ml-[73px] gena3">
       <h2 class="h2-title mb-[17px]">Чем вы занимаетесь?</h2>
       <p class="regis-p mb-[44px]"> Укажите все ваши специальности- так найдется больше подходящих заказов</p>
       <input type="text" class="input mb-[44px] pl-[20px]" placeholder="Поиск">
@@ -55,25 +55,30 @@
 
       <div class="">
         <div class="seleckt-btn">
-          <button class="btn-vacans" style="width: 179px;">Репетитор</button>
+          <button class="btn-vacans">Репетитор</button>
           <button class="btn-vacans">Артист</button>
-          <button class="btn-vacans" style="width: 218px;">Мастер красоты</button>
-          <button class="btn-vacans" style="width: 167px;">Ветеринар</button>
-          <button class="btn-vacans" style="width: 209px;">IT-специалист</button>
+          <button class="btn-vacans">Мастер красоты</button>
+          <button class="btn-vacans">Ветеринар</button>
+          <button class="btn-vacans">IT-специалист</button>
+
+          <button class="btn-vacans" >Юрист</button>
+          <button class="btn-vacans" >Бухгалтер</button>
+          <button class="btn-vacans" >Автоинструктор</button>
+          <button class="btn-vacans">Спортивный тренер</button>
         </div>
 
-        <div class="mt-[20px] seleckt-btn">
-          <button class="btn-vacans" style="width: 123px;">Юрист</button>
-          <button class="btn-vacans" style="width: 146px;">Бухгалтер</button>
-          <button class="btn-vacans" style="width: 196px;">Автоинструктор</button>
-          <button class="btn-vacans" style="width: 255px;">Спортивный тренер</button>
-        </div>
+<!--        <div class="mt-[20px] seleckt-btn">-->
+<!--          <button class="btn-vacans" >Юрист</button>-->
+<!--          <button class="btn-vacans" >Бухгалтер</button>-->
+<!--          <button class="btn-vacans" >Автоинструктор</button>-->
+<!--          <button class="btn-vacans">Спортивный тренер</button>-->
+<!--        </div>-->
 
         <p class="seleckt-text mt-[36px]">Укажите ваши специальности</p>
       </div>
     </div>
 
-    <div class="mx-[73px] flex justify-between my-[124px]">
+    <div class="mx-[73px] flex justify-between my-[124px] gena7">
       <button class="reg-btn-nazad" (click)="goBack()">Назад</button>
       <button class="reg-btn-dalee" (click)="goToStep(4)">Далее</button>
     </div>
@@ -82,9 +87,9 @@
 
 
   <div id="step4">
-    <div class="ml-[73px]">
+    <div class="ml-[73px] gena3">
       <h2 class="h2-title ">Загрузите фото профиля</h2>
-      <p class="regis-p mt-[135px] mb-[57px]">Клиенты чаще выбирают специалистов с фото. Потом его можно будет поменять в анкете.</p>
+      <p class="regis-p mt-[18px] mb-[57px]">Клиенты чаще выбирают специалистов с фото. Потом его можно будет поменять в анкете.</p>
 
       <div class="general-foto">
         <div class="w-[415px]">
@@ -160,7 +165,7 @@
 
 
 
-<!--   <div class="ml-[73px]">--> можно как модалку
+<!--&lt;!&ndash;   <div class="ml-[73px]">&ndash;&gt; можно как модалку-->
 <!--    <div class="mb-[15px]">-->
 <!--        <svg xmlns="http://www.w3.org/2000/svg" width="188" height="188" viewBox="0 0 188 188" fill="none">-->
 <!--            <path d="M34.1042 0.25C25.1255 0.25 16.5145 3.81677 10.1657 10.1657C3.81677 16.5145 0.25 25.1255 0.25 34.1042V153.896C0.25 162.875 3.81677 171.485 10.1657 177.834C16.5145 184.183 25.1255 187.75 34.1042 187.75H153.896C162.875 187.75 171.485 184.183 177.834 177.834C184.183 171.485 187.75 162.875 187.75 153.896V34.1042C187.75 25.1255 184.183 16.5145 177.834 10.1657C171.485 3.81677 162.875 0.25 153.896 0.25H34.1042ZM138.583 70.875L86.5 122.958C85.0351 124.421 83.0495 125.243 80.9792 125.243C78.9089 125.243 76.9232 124.421 75.4583 122.958L54.5833 102.083C53.8158 101.368 53.2001 100.506 52.7731 99.5473C52.3461 98.589 52.1165 97.5544 52.098 96.5054C52.0795 95.4565 52.2725 94.4145 52.6654 93.4417C53.0583 92.4689 53.6432 91.5852 54.385 90.8434C55.1269 90.1015 56.0106 89.5167 56.9834 89.1237C57.9562 88.7308 58.9981 88.5378 60.0471 88.5563C61.0961 88.5749 62.1306 88.8045 63.0889 89.2315C64.0473 89.6585 64.9098 90.2741 65.625 91.0417L80.9792 106.385L127.542 59.8229C128.263 59.0771 129.125 58.4823 130.078 58.0733C131.032 57.6644 132.057 57.4493 133.094 57.4408C134.132 57.4323 135.16 57.6304 136.12 58.0237C137.08 58.417 137.952 58.9975 138.685 59.7314C139.419 60.4653 139.998 61.3378 140.391 62.2981C140.783 63.2584 140.98 64.2873 140.971 65.3246C140.961 66.3619 140.745 67.387 140.335 68.3399C139.925 69.2929 139.33 70.1547 138.583 70.875Z" fill="#0CC74B"/>-->
