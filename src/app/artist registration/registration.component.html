@@ -19,6 +19,8 @@
      <div class="grid gap-[13px] items-center mb-[28px] mt-[83px] gena2">
        <input type="text" class="input mb-[44px] pl-[20px]" placeholder="login" [(ngModel)]="firstName" (input)="checkFormValidity()">
        <input type="text" class="input mb-[44px] pl-[20px]" placeholder="password" [(ngModel)]="lastName" (input)="checkFormValidity()">
+       <input type="text" class="input mb-[44px] pl-[20px]" placeholder="telephone" [(ngModel)]="telephone" (input)="checkFormValidity()">
+       <input type="text" class="input mb-[44px] pl-[20px]" placeholder="mail" [(ngModel)]="mail" (input)="checkFormValidity()">
      </div>
 
       <div class="text-right mt-[50px] mr-[94px] mb-[154px] gena4"><button class="reg-btn" (click)="goToStep(2)" [disabled]="!isNextButtonEnabled">Далее</button></div>
@@ -50,30 +52,22 @@
     <div class="ml-[73px] gena3">
       <h2 class="h2-title mb-[17px]">Чем вы занимаетесь?</h2>
       <p class="regis-p mb-[44px]"> Укажите все ваши специальности- так найдется больше подходящих заказов</p>
-      <input type="text" class="input mb-[44px] pl-[20px]" placeholder="Поиск">
+      <input type="text" class="input mb-[44px] pl-[20px]" [(ngModel)]="professions" placeholder="Поиск">
 
 
       <div class="">
         <div class="seleckt-btn">
-          <button class="btn-vacans">Репетитор</button>
-          <button class="btn-vacans">Артист</button>
-          <button class="btn-vacans">Мастер красоты</button>
-          <button class="btn-vacans">Ветеринар</button>
-          <button class="btn-vacans">IT-специалист</button>
+          <button class="btn-vacans" (click)="viborVak('Репетитор')">Репетитор</button>
+          <button class="btn-vacans" (click)="viborVak('Артист')">Артист</button>
+          <button class="btn-vacans" (click)="viborVak('Мастер красоты')">Мастер красоты</button>
+          <button class="btn-vacans" (click)="viborVak('Ветеринар')">Ветеринар</button>
+          <button class="btn-vacans" (click)="viborVak('IT-специалист')">IT-специалист</button>
 
-          <button class="btn-vacans" >Юрист</button>
-          <button class="btn-vacans" >Бухгалтер</button>
-          <button class="btn-vacans" >Автоинструктор</button>
-          <button class="btn-vacans">Спортивный тренер</button>
+          <button class="btn-vacans" (click)="viborVak('Юрист')" >Юрист</button>
+          <button class="btn-vacans"(click)="viborVak('Бухгалтер')" >Бухгалтер</button>
+          <button class="btn-vacans" (click)="viborVak('Автоинструктор')"  >Автоинструктор</button>
+          <button class="btn-vacans" (click)="viborVak('Спортивный тренер')">Спортивный тренер</button>
         </div>
-
-<!--        <div class="mt-[20px] seleckt-btn">-->
-<!--          <button class="btn-vacans" >Юрист</button>-->
-<!--          <button class="btn-vacans" >Бухгалтер</button>-->
-<!--          <button class="btn-vacans" >Автоинструктор</button>-->
-<!--          <button class="btn-vacans">Спортивный тренер</button>-->
-<!--        </div>-->
-
         <p class="seleckt-text mt-[36px]">Укажите ваши специальности</p>
       </div>
     </div>

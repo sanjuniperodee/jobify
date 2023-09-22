@@ -9,9 +9,16 @@ import { Component } from '@angular/core';
 export class RegistrationComponent {
   firstName: string = '';
   lastName: string = '';
+  telephone:any;
+  mail: string = '';
   отчество: string = '';
   activeStep:number = 1;
   isNextButtonEnabled: boolean = false;
+  professions: string ='';
+
+  viborVak(profession:string){
+    this.professions = profession
+  }
 
   goToStep(stepNumber:number){
     const element = document.getElementById(`step${stepNumber}`)
@@ -32,11 +39,12 @@ export class RegistrationComponent {
 
 
   checkFormValidity() {
-    if (this.firstName !== '' && this.lastName !== '') {
+    if (this.firstName !== '' && this.lastName !== ''&&this.mail!==''&&this.telephone!=='') {
       this.isNextButtonEnabled = true;
     } else {
       this.isNextButtonEnabled = false;
     }
   }
+
 
 }
