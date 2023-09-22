@@ -12,10 +12,10 @@
         <div class="line"></div>
         <div class="line"></div>
       </div>
-      <div class="close-icon" *ngIf="menuOpen"  (click)="toggleMenu()">
-        &#10006;
+      <div class="close-icon col-sm-12 col-md-12" *ngIf="menuOpen"  (click)="toggleMenu()">
+            &#10006;
       </div>
-
+<!--      &#10060;-->
       <nav class="nav" [ngClass]="{'open': menuOpen}">
         <a href="" class="link">Главная</a>
         <a routerLink="/job" class="link">Найти работу</a>

@@ -1,4 +1,5 @@
 import { Component} from '@angular/core';
+import {NgbModal, NgbModalConfig} from "@ng-bootstrap/ng-bootstrap";
 
 @Component({
   selector: 'app-otklik',
@@ -6,5 +7,12 @@ import { Component} from '@angular/core';
   styleUrls: ['./otklik.component.css']
 })
 export class OtklikComponent {
- 
+
+  constructor(config: NgbModalConfig, private modalService: NgbModal){
+
+  }
+
+  open(content:any) {
+    this.modalService.open(content);
+  }
 }

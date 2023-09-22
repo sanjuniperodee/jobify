@@ -3,7 +3,7 @@
 }
 
 .nav{
-  
+
     color: #000;
     font-size: 24px;
     font-weight: 700;
@@ -33,6 +33,13 @@
     flex-shrink: 0;
     border-radius: 15px;
     background: rgba(210, 210, 210, 0.73);
+  font-size: 19px;
+  font-weight: 500;
+}
+
+.gen-input{
+  font-size: 19px;
+  font-weight: 500;
 }
 
 input[type="text"].input-search::placeholder {
@@ -40,7 +47,7 @@ input[type="text"].input-search::placeholder {
     font-size: 19px;
     font-weight: 500;
     letter-spacing: -0.19px;
-    padding-left: 15px;
+    /*padding-left: 15px;*/
 }
 
 .vacans{
@@ -61,7 +68,7 @@ input[type="text"].input-search::placeholder {
 input[type="checkbox"].checkbox {
     display: none;
   }
-  
+
   /* Стилизовать метку для чекбокса */
   label.label {
     position: relative;
@@ -72,7 +79,7 @@ input[type="checkbox"].checkbox {
     font-size: 15px;
     font-weight: 600;
   }
-  
+
   /* Создать стилизованный вид чекбокса */
   label.label::before {
     position: absolute;
@@ -86,12 +93,12 @@ input[type="checkbox"].checkbox {
     background: #FFF;
     border-radius: 10px;
   }
-  
+
   /* Показать галочку и изменить цвет фона при выборе чекбокса */
   input[type="checkbox"].checkbox:checked + label.label::before {
     background: #060043;
   }
-  
+
   /* Стилизовать галочку внутри чекбокса */
   input[type="checkbox"].checkbox:checked + label.label::before::after {
     content: "";
@@ -163,6 +170,5 @@ input[type="checkbox"].checkbox {
     font-weight: 600;
   }
 
- 
 
-  
+

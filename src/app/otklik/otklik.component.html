@@ -112,11 +112,23 @@
                 </div>
 
 
-                <button class="bg-[#060043] text-white rounded-[47px] px-[24px] py-[12px] mt-[48px] mb-[60px    ]">Отменить заказ</button>
+                <button class="bg-[#060043] text-white rounded-[47px] px-[24px] py-[12px] mt-[48px] mb-[60px ]" (click)="open(content)">Отменить заказ</button>
 
             </div>
 
-          
+          <ng-template #content let-c="close" let-d="dismiss">
+            <div class="modal-header">
+
+              <button type="button" class="btn-close" aria-label="Close" (click)="d('Cross click')"></button>
+            </div>
+            <div class="modal-body d-grid">
+              <h4 class="modal-title" id="modal-basic-title"> Вы уверены что хотите отменить заказ</h4>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-outline-dark" (click)="c('Save click')">нет</button>
+              <button type="button" class="btn btn-outline-dark" (click)="c('Save click')">да</button>
+            </div>
+          </ng-template>
         </div>
     </app-creating>
 </div>
