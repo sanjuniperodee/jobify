@@ -1,127 +1,33 @@
 <app-header background="/assets/img/about.png" backgroundGradient="linear-gradient(rgba(0,0,0,0.42), rgba(0,0,0,0.42))"   height="600px" repeatMode="no-repeat" backgroundSize="cover">
-  <div class="title-job">Получите работу</div>
+  <div class="title-job h-[300px]">Получите работу</div>
 </app-header>
 
-
-<div class="mt-[370px] sort-wrap">
-  <h2 class="filter-h2 mr-[122px] ml-[91px]">Фильтр вакансий</h2>
-  <p class="filter-title mr-[328px]">10,000 вакансий</p>
-  <div class="sort-job">
-    <p class="filter-title">Сортировать по </p>
-    <select name="" id="" class="silect-sort">
-      <option value=""></option>
-    </select>
-  </div>
-</div>
-
-<div class="job-container mb-[125px]">
-  <div class="mt-[10px]">
-    <div class="filter-wrap">
+<div class="my-[5%] mx-[10%] row">
+  <div class="mt-[10px] col-lg-3 col-md-4 col-12">
+    <div class="filter-wrap pb-5">
       <h3 class="filter-title mt-[50px] mb-[20px]">Категория</h3>
-      <div class="categor-wrap ">
-        <select name="" id="" class="categor-option">
+      <div class="categor-wrap p-0">
+        <select name="" class="categor-option">
           <option value="" >Все категории</option>
+          <option *ngFor="let category of categories" value={{category.description}}>
+            {{category.description}}
+          </option>
         </select>
       </div>
-
-      <h3 class="mt-[38px] filter-title">Тип занятости</h3>
-      <div class="wrap-checkbox mt-[15px]">
-        <input type="checkbox"  class="wpap-chec">
-        <label for="" class="label-t">Полная занятость</label>
-      </div>
-
-      <div class="wrap-checkbox mt-[15px]">
-        <input type="checkbox" class="wpap-chec">
-        <label for="" class="label-t">Полная занятость</label>
-      </div>
-
-      <div class="wrap-checkbox mt-[15px]">
-        <input type="checkbox"  class="wpap-chec">
-        <label for="" class="label-t">Полная занятость</label>
-      </div>
-
-      <div class="wrap-checkbox mt-[15px]">
-        <input type="checkbox"  class="wpap-chec">
-        <label for="" class="label-t">Полная занятость</label>
-      </div>
-
       <h3 class="filter-title mt-[50px] mb-[20px]">Локация</h3>
       <div class="categor-wrap ">
-        <select name="" id="" class="categor-option" style="padding-right: 80px;">
+        <select name="" class="categor-option" style="padding-right: 80px;">
           <option value="">Алматы</option>
         </select>
       </div>
-
-      <h3 class="mt-[38px] filter-title">Опыт работы</h3>
-      <div class="wrap-checkbox mt-[15px]">
-        <input type="checkbox"  class="wpap-chec">
-        <label for="" class="label-t">1-2 года</label>
-      </div>
-
-      <div class="wrap-checkbox mt-[15px]">
-        <input type="checkbox"  class="wpap-chec">
-        <label for="" class="label-t">2-3 года</label>
-      </div>
-
-      <div class="wrap-checkbox mt-[15px]">
-        <input type="checkbox"  class="wpap-chec">
-        <label for="" class="label-t">3-6 лет</label>
-      </div>
-
-      <div class="wrap-checkbox mt-[15px]">
-        <input type="checkbox"  class="wpap-chec">
-        <label for="" class="label-t">больше 6 лет</label>
-      </div>
-
-      <h3 class="mt-[38px] filter-title">Дата публикации</h3>
-      <div class="wrap-checkbox mt-[15px]">
-        <input type="checkbox"  class="wpap-chec">
-        <label for="" class="label-t">Все</label>
-      </div>
-
-      <div class="wrap-checkbox mt-[15px]">
-        <input type="checkbox"  class="wpap-chec">
-        <label for="" class="label-t">Сегодня</label>
-      </div>
-
-      <div class="wrap-checkbox mt-[15px]">
-        <input type="checkbox"  class="wpap-chec">
-        <label for="" class="label-t">Последние 2 дня</label>
-      </div>
-
-      <div class="wrap-checkbox mt-[15px]">
-        <input type="checkbox"  class="wpap-chec">
-        <label for="" class="label-t">Последние 3 дня</label>
-      </div>
-
-      <div class="wrap-checkbox mt-[15px]">
-        <input type="checkbox"  class="wpap-chec">
-        <label for="" class="label-t">Последние 3 дня</label>
-      </div>
-
-
-      <div class="wrap-checkbox mt-[15px]">
-        <input type="checkbox"  class="wpap-chec">
-        <label for="" class="label-t">Последние 5 дней</label>
-      </div>
-
-
-      <div class="wrap-checkbox mt-[15px]">
-        <input type="checkbox"  class="wpap-chec">
-        <label for="" class="label-t">Последние 10 дней</label>
-      </div>
-
-
-      <h3 class="mt-[38px] filter-title mb-36px">Фильтр</h3>
-      <div class=""></div>
-      <div class="">Оплата: от 0 до 50 000</div>
+      <button class="btn-vacans mt-5">Применить</button>
     </div>
   </div>
 
 
 
 
-  <div class="vacans-wrap">
+  <div class="vacans-wrap col-lg-8 col-md-8 col-12">
     <div class="vacancies-container mt-[86px]">
       <div class="vacancies-wrap1">
         <div class="img-vacans mb-[30px]"></div>
@@ -130,10 +36,10 @@
 
       <div>
         <h2 class="vacans-title mb-[19px]">Digital-маркетолог</h2>
-        <div class="vacans-info">
-          <p class="vacans-text">Креативное агенство</p>
-          <p class="vacans-text">Алматы</p>
-          <p class="money">$3500-$4000</p>
+        <div class="vacans-info row">
+          <p class="vacans-text col-lg-4 col-md-4 col-12">Креативное агенство</p>
+          <p class="vacans-text col-lg-4 col-md-4 col-12">Алматы</p>
+          <p class="money col-lg-4 col-md-4 col-12">$3500-$4000</p>
         </div>
         <div class="otklik">
           <button class="btn-vacans mb-[12px]" routerLink="/offer">Откликнуться</button>
@@ -141,7 +47,6 @@
         </div>
       </div>
     </div>
-
     <div class="vacancies-container mt-[86px]">
       <div class="vacancies-wrap1">
         <div class="img-vacans mb-[30px]"></div>
@@ -150,10 +55,10 @@
 
       <div>
         <h2 class="vacans-title mb-[19px]">Digital-маркетолог</h2>
-        <div class="vacans-info">
-          <p class="vacans-text">Креативное агенство</p>
-          <p class="vacans-text">Алматы</p>
-          <p class="money">$3500-$4000</p>
+        <div class="vacans-info row">
+          <p class="vacans-text col-lg-4 col-md-4 col-12">Креативное агенство</p>
+          <p class="vacans-text col-lg-4 col-md-4 col-12">Алматы</p>
+          <p class="money col-lg-4 col-md-4 col-12">$3500-$4000</p>
         </div>
         <div class="otklik">
           <button class="btn-vacans mb-[12px]" routerLink="/offer">Откликнуться</button>
@@ -161,8 +66,6 @@
         </div>
       </div>
     </div>
-
-
     <div class="vacancies-container mt-[86px]">
       <div class="vacancies-wrap1">
         <div class="img-vacans mb-[30px]"></div>
@@ -171,10 +74,10 @@
 
       <div>
         <h2 class="vacans-title mb-[19px]">Digital-маркетолог</h2>
-        <div class="vacans-info">
-          <p class="vacans-text">Креативное агенство</p>
-          <p class="vacans-text">Алматы</p>
-          <p class="money">$3500-$4000</p>
+        <div class="vacans-info row">
+          <p class="vacans-text col-lg-4 col-md-4 col-12">Креативное агенство</p>
+          <p class="vacans-text col-lg-4 col-md-4 col-12">Алматы</p>
+          <p class="money col-lg-4 col-md-4 col-12">$3500-$4000</p>
         </div>
         <div class="otklik">
           <button class="btn-vacans mb-[12px]" routerLink="/offer">Откликнуться</button>
@@ -182,7 +85,6 @@
         </div>
       </div>
     </div>
-
     <div class="vacancies-container mt-[86px]">
       <div class="vacancies-wrap1">
         <div class="img-vacans mb-[30px]"></div>
@@ -191,10 +93,10 @@
 
       <div>
         <h2 class="vacans-title mb-[19px]">Digital-маркетолог</h2>
-        <div class="vacans-info">
-          <p class="vacans-text">Креативное агенство</p>
-          <p class="vacans-text">Алматы</p>
-          <p class="money">$3500-$4000</p>
+        <div class="vacans-info row">
+          <p class="vacans-text col-lg-4 col-md-4 col-12">Креативное агенство</p>
+          <p class="vacans-text col-lg-4 col-md-4 col-12">Алматы</p>
+          <p class="money col-lg-4 col-md-4 col-12">$3500-$4000</p>
         </div>
         <div class="otklik">
           <button class="btn-vacans mb-[12px]" routerLink="/offer">Откликнуться</button>
@@ -202,8 +104,6 @@
         </div>
       </div>
     </div>
-
-
     <div class="vacancies-container mt-[86px]">
       <div class="vacancies-wrap1">
         <div class="img-vacans mb-[30px]"></div>
@@ -212,46 +112,15 @@
 
       <div>
         <h2 class="vacans-title mb-[19px]">Digital-маркетолог</h2>
-        <div class="vacans-info">
-          <p class="vacans-text">Креативное агенство</p>
-          <p class="vacans-text">Алматы</p>
-          <p class="money">$3500-$4000</p>
+        <div class="vacans-info row">
+          <p class="vacans-text col-lg-4 col-md-4 col-12">Креативное агенство</p>
+          <p class="vacans-text col-lg-4 col-md-4 col-12">Алматы</p>
+          <p class="money col-lg-4 col-md-4 col-12">$3500-$4000</p>
         </div>
         <div class="otklik">
           <button class="btn-vacans mb-[12px]" routerLink="/offer">Откликнуться</button>
           <p class="time-vacans">7 часов назад</p>
         </div>
-      </div>
-    </div>
-
-    <div class="vacancies-container mt-[86px]">
-      <div class="vacancies-wrap1">
-        <div class="img-vacans mb-[30px]"></div>
-      </div>
-
-
-      <div>
-        <h2 class="vacans-title mb-[19px]">Digital-маркетолог</h2>
-        <div class="vacans-info">
-          <p class="vacans-text">Креативное агенство</p>
-          <p class="vacans-text">Алматы</p>
-          <p class="money">$3500-$4000</p>
-        </div>
-        <div class="otklik">
-          <button class="btn-vacans mb-[12px]" routerLink="/offer">Откликнуться</button>
-          <p class="time-vacans">7 часов назад</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="str-wrap">
-      <div class="str-vacans active-str">01</div>
-      <div class="str-vacans ">02</div>
-      <div class="str-vacans ">03</div>
-      <div class="str-vacans ">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M15.707 11.2929C15.8944 11.4805 15.9998 11.7348 15.9998 11.9999C15.9998 12.2651 15.8944 12.5194 15.707 12.7069L10.05 18.3639C9.86137 18.5461 9.60876 18.6469 9.34657 18.6446C9.08437 18.6423 8.83356 18.5372 8.64815 18.3518C8.46274 18.1663 8.35757 17.9155 8.3553 17.6533C8.35302 17.3911 8.45381 17.1385 8.63597 16.9499L13.586 11.9999L8.63597 7.04994C8.45381 6.86133 8.35302 6.60873 8.3553 6.34653C8.35757 6.08434 8.46274 5.83353 8.64815 5.64812C8.83356 5.46271 9.08437 5.35754 9.34657 5.35526C9.60876 5.35298 9.86137 5.45378 10.05 5.63594L15.707 11.2929Z" fill="#848484"/>
-        </svg>
       </div>
     </div>
   </div>

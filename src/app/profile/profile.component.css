@@ -13,7 +13,6 @@
 }
 
 .nav-menu{
-    width: 307px;
     border-radius: 9px;
     background: rgba(255, 255, 255, 0.24);
 }
@@ -31,7 +30,6 @@
 }
 
 .dannie{
-    width: 760px;
     border-radius: 16px;
     background: #FFF;
     height: 171px;
@@ -67,7 +65,6 @@
 }
 
 .container-2{
-    width: 760px;
     border-radius: 16px;
     background: #FFF;
 }
@@ -79,7 +76,6 @@
 }
 
 .linia{
-    width: 701.035px;
     height: 1px;
     background: rgba(0, 0, 0, 0.27);
     margin: 18px 26px 26px 0px;
@@ -115,7 +111,7 @@
 input[type="checkbox"].checkbox-round {
     display: none;
   }
-  
+
   /* Стилизовать метку для чекбокса */
   label.label-yvedomlen {
     position: relative;
@@ -125,7 +121,7 @@ input[type="checkbox"].checkbox-round {
     font-weight: 600;
     cursor: pointer;
   }
-  
+
   /* Создать стилизованный вид круглого чекбокса */
   label.label-yvedomlen::before {
     position: absolute;
@@ -138,7 +134,7 @@ input[type="checkbox"].checkbox-round {
     border: 2px solid #060043;
     cursor: pointer;
   }
-  
+
   /* Показать галочку при выборе чекбокса */
   input[type="checkbox"].checkbox-round:checked + label.label-yvedomlen::before {
     background: #060043;
@@ -153,14 +149,13 @@ input[type="checkbox"].checkbox-round {
 
 
 .input-name{
-    width: 681px;
     height: 56px;
     flex-shrink: 0;
     border-radius: 11px;
     background: rgba(217, 217, 217, 0.71);
     padding: 6px 15px 15px 19px;
     margin-top: 13px;
-} 
+}
 
 .pol{
     width: 268px;
@@ -185,11 +180,10 @@ input[type="checkbox"].checkbox-round {
 }
 
 .pol:hover {
-    background: rgba(217, 217, 217, 1); 
+    background: rgba(217, 217, 217, 1);
 }
 
 .input-nomer{
-    width: 681px;
     height: 56px;
     border-radius: 11px;
     background: rgba(217, 217, 217, 0.71);
@@ -219,7 +213,6 @@ background: rgba(217, 217, 217, -0.71);
 }
 
 .mail{
-    width: 681px;
     height: 56px;
     border-radius: 11px;
     background: rgba(217, 217, 217, 0.71);

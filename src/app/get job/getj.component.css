@@ -1,4 +1,5 @@
 .title-job{
+
     color: #FFF;
     font-size: 41px;
     font-weight: 900;
@@ -9,8 +10,6 @@
 .job-container{
     display: flex;
     justify-content: flex-start;
-    gap: 206px;
-    margin-left: 127px;
 }
 
 .filter-h2{
@@ -20,7 +19,6 @@
 }
 
 .filter-wrap{
-    width: 257px;
     flex-shrink: 0;
     border: 1px solid #D9D9D9;
     background: #FFF;
@@ -32,7 +30,6 @@
     display: flex;
     align-items: center;
     gap: 23px;
-    width: 196px;
     height: 43px;
     border: 1px solid #D1D1D1;
     background: rgba(217, 217, 217, 0.00);
@@ -46,11 +43,9 @@
 
 .categor-option{
     color: #5C5C5C;
-    text-align: center;
+    text-align: left;
     font-size: 16px;
     font-weight: 500;
-    padding-left: 10px;
-    padding-right: 23px;
     outline: none;
 }
 
@@ -136,7 +131,6 @@
 
 .vacans-info{
     display: flex;
-    gap: 86px;
 }
 
 .vacans-title{
@@ -204,10 +198,6 @@
     font-size: 13px;
   }
 
-  .vacans-info{
-    gap: 26px;
-  }
-
   .img-vacans{
     width: 110px;
   }
@@ -219,10 +209,6 @@
 
   .vacancies-container{
     display: grid;
-  }
-
-  .filter-wrap{
-    width: 370px;
   }
 }
 
@@ -260,10 +246,6 @@
 
   .vacancies-container{
     display: grid;
-  }
-
-  .filter-wrap{
-    width: 206px;
   }
 }
 
