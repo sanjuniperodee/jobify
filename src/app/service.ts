@@ -1,6 +1,7 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import {parseJson} from "@angular/cli/src/utilities/json-file";
 
 @Injectable({
     providedIn: 'root'
@@ -16,8 +17,13 @@ export class Service {
 
 
     getUser(): Observable<any> {
-      const url = `${this.apiUrl}/api/v1/auth/user` // Замените на нужный URL для вашего сервера API
-      return this.http.get<any>(url);
+      console.log(localStorage.getItem('authToken'))
+      const url = `${this.apiUrl}/api/v1/users/` + localStorage.getItem('userId')
+      const headers = new HttpHeaders({
+        'Content-Type': 'application/json',
+        'Authorization': 'Bearer ' + localStorage.getItem('authToken')
+      });
+      return this.http.get<any[]>(url, {headers});
     }
 
   login(username: string, password: string): Observable<any> {
@@ -27,36 +33,60 @@ export class Service {
 
     const options = {
       headers: headers,
-      origin: 'http://localhost:4200', // Specify the exact origin of your Angular app
-      methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
-      credentials: true,
-      optionsSuccessStatus: 200,
+      method: 'POST',
     };
 
     const body = { username, password };
-
+    console.log(body)
     return this.http.post(`${this.apiUrl}/api/v1/auth/login`, body, options);
   }
   storeToken(token: string): void {
     localStorage.setItem('authToken', token);
   }
-
-  // Get the token from a variable or local storage
   getToken(): string | null {
     return localStorage.getItem('authToken');
   }
-
-  // Remove the token
   removeToken(): void {
     localStorage.removeItem('authToken');
   }
 
-  getJobs(): Observable<any[]> {
-    return this.http.get<any[]>(this.apiUrl+"/jobs");
+  getJobs(): Observable<any> {
+    // const headers = new HttpHeaders({
+    //   'Content-Type': 'application/json',
+    //     'Authorization': `Bearer ${this.getToken()}`,
+    // });
+    // let data = {
+    //   "category_id": 1,
+    //   "company": "Kaspi.kz",
+    //   "content_work": "Нужно разработать магазин использую CMS систему",
+    //   "description": "Разработка онлайн магазина",
+    //   "experience": "Нужен человек с опытом от 3-х лет",
+    //   "location": "Алматы",
+    //   "price": 1500000,
+    //   "skills": "Django, Nginx, Angular, Uwsgi, Docker",
+    //   "subcategory_id": 1,
+    //   "user_id": 28,
+    // }
+    //
+    // return this.http.post<any>(this.apiUrl+"/jobs/saveJob", data, {headers});
+    const headers = new HttpHeaders({
+      'Content-Type': 'application/json',
+      'Authorization': `Bearer ${this.getToken()}`,
+    });
+    return this.http.get<any[]>(this.apiUrl+"/jobs/allJobs", {headers});
   }
 
   getJobById(jobId: string): any{
       return this.http.get<any>(this.apiUrl+"/jobs/" + jobId)
+  }
+
+  getCategories(): Observable<any[]> {
+    const headers = new HttpHeaders({
+      'Content-Type': 'application/json',
+      'Authorization': `Bearer ${this.getToken()}`,
+    });
+
+    return this.http.get<any[]>(this.apiUrl+"/jobs/category", {headers});
   }
 
 }

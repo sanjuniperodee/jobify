@@ -9,10 +9,7 @@
 .offer-container{
     display: flex;
     justify-content: space-between;
-    margin-left: 100px;
-    gap: 200px;
     overflow:hidden;
-   
 }
 
 .offer-img{
@@ -60,11 +57,9 @@
     font-size: 22px;
     font-weight: 300;
     letter-spacing: 0.22px;
-    width: 709px;
 }
 
 .info-desck{
-  width: 386px; 
   height: fit-content;
   border: 1px solid #D1D1D1;
   background: #FFF;
@@ -75,7 +70,7 @@
     color: #060043;
     font-size: 24px;
     font-weight: 500;
-    
+
 }
 
 .desck-wrap{

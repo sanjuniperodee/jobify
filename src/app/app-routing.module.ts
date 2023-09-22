@@ -29,11 +29,11 @@ const routes: Routes = [
       {path:'profile',component:ProfileComponent},
       {path:'reg', component:PochtaComponent},
       {path:'layuot', component:LayuotComponent},
-      {path:'chat',component:ZakazLayuoComponent},
-      {path:'balans',component:BalansComponent},
-      {path:'anketa',component:AnketaComponent},
-      {path:'otklik',component:OtklikComponent},
-      {path:'ispoluser',component:IspolnitelUserComponent}
+      {path:'chat', component:ZakazLayuoComponent},
+      {path:'balans', component:BalansComponent},
+      {path:'anketa', component:AnketaComponent},
+      {path:'otklik', component:OtklikComponent},
+      {path:'ispoluser', component:IspolnitelUserComponent}
 ];
 
 @NgModule({

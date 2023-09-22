@@ -1,4 +1,4 @@
-import { Component} from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 import { Service } from '../service';
 
 @Component({
@@ -7,15 +7,13 @@ import { Service } from '../service';
   styleUrls: ['./profile.component.css']
 })
 export class ProfileComponent {
-  login:any
+  user:any
   constructor(private service:Service){}
-  getUsers(){
-    const login:String=''
+  ngOnInit(){
     this.service.getUser().subscribe(
-      (data)=>{
-        this.login = data.login
-        console.log(data)
-        console.log(234)
+      (response)=>{
+        this.user = response
+        console.log(response)
       },
       (error) => {
         console.error(error);

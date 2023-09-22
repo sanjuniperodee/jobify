@@ -31,8 +31,6 @@
 }
 
 .block{
-    width: 817px;
-    height: 352px;
     border-radius: 35px;
     background: #D9D9D9;
     margin: 0 auto;
@@ -64,7 +62,7 @@
 .reg-div{
     width: 312px;
     height: 65px;
-    flex-shrink: 0; 
+    flex-shrink: 0;
     border-radius: 13px;
     border: 1px solid #060043;
     background: #060043;
@@ -187,7 +185,7 @@ input[type="checkbox"]:checked::before {
 }
 
 .oplata-h2{
-  
+
     font-size: 30px;
     font-weight: 700;
 }

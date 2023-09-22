@@ -9,6 +9,7 @@ import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from '../home/home.component';
 import { BodyHeaderComponent } from '../bodyheader/bodyheader.component';
 import { RouterModule } from '@angular/router';
+import {FormsModule} from "@angular/forms";
 
 
 @NgModule({
@@ -22,10 +23,11 @@ import { RouterModule } from '@angular/router';
     HomeComponent,
     BodyHeaderComponent
   ],
-  imports: [
-    CommonModule,
-    RouterModule
-  ],
+    imports: [
+        CommonModule,
+        RouterModule,
+        FormsModule
+    ],
   exports: [
     HeaderComponent,
     FooterComponent

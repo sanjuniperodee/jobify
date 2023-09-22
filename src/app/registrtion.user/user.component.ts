@@ -11,10 +11,6 @@ import { Service } from '../service';
 export class UserComponent {
   constructor(@Inject(MAT_DIALOG_DATA) public data: any, public dialogRef: MatDialogRef<UserComponent>,private service:Service) {}
 
-  // backdropClick(): void {
-  //   this.dialogRef.close();
-  // }
-
   request():void{
     const login = {
         username:'sanjuniperodee',
@@ -29,7 +25,6 @@ export class UserComponent {
         error =>{
             console.log(error)
         }
-
     )
   }
 

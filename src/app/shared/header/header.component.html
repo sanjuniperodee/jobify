@@ -4,9 +4,9 @@
     'background-repeat': repeatMode,
     'background-size': backgroundSize
   }">
-  <header class="header">
-    <div class="container-header">
-      <div class="logo">лого</div>
+  <header class="px-[10%]">
+    <div class="d-flex justify-content-between align-items-center">
+      <img src="assets/img/Logo.png" class="h-[80px]" alt="">
       <div class="burger" (click)="toggleMenu()">
         <div class="line"></div>
         <div class="line"></div>
@@ -18,37 +18,48 @@
         <a routerLink="/about" class="link">О компании</a>
         <a href="" class="link">Связаться</a>
       </nav>
-      <div class="nav-reg">
+      <div *ngIf="!loggedIn" class="nav-reg">
         <p routerLink="/registration" class="cursor-pointer pnav w-[135px] bg-[#060043]">Регистрация</p>
         <p  class="cursor-pointer pnav w-[127px]  bg-white text-black"  (click)="open(content)">Войти</p>
       </div>
+      <a href="/profile">
+        <div *ngIf="loggedIn" class="nav-reg link" >
+          <img src="/assets/img/profile.png" alt="" class="h-[35px]">
+          <p>{{user.username}}</p>
+        </div>
+      </a>
+
     </div>
     <div style="display: flex; justify-content: center; width: 100%;">
       <hr style="background: rgba(255, 255, 255, 0.16) ; width: 90%; ">
     </div>
-    <nav class="nav active" *ngIf="menuOpen">
-      <a href="" class="link">Главная</a>
-      <a routerLink="/job" class="link">Найти работу</a>
-      <a routerLink="/about" class="link">О компании</a>
-      <a href="" class="link">Связаться</a>
-      <div class="nav-reg2 d-flex gap-1">
-        <p routerLink="/registration" class="cursor-pointer pnav w-[135px] bg-[#060043]">Регистрация</p>
-        <p  class="cursor-pointer pnav w-[127px]  bg-white text-black"  (click)="open(content)">Войти</p>
-      </div>
-    </nav>
+<!--    <nav class="nav active" *ngIf="menuOpen">-->
+<!--      <a href="" class="link">Главная</a>-->
+<!--      <a routerLink="/job" class="link">Найти работу</a>-->
+<!--      <a routerLink="/about" class="link">О компании</a>-->
+<!--      <a href="" class="link">Связаться</a>-->
+<!--      <div *ngIf="!loggedIn" class="nav-reg2 d-flex gap-1">-->
+<!--        <p routerLink="/registration" class="cursor-pointer pnav w-[135px] bg-[#060043]">Регистрация</p>-->
+<!--        <p  class="cursor-pointer pnav w-[127px]  bg-white text-black"  (click)="open(content)">Войти</p>-->
+<!--      </div>-->
+<!--      <div *ngIf="!loggedIn" class="nav-reg2 d-flex gap-1">-->
+<!--        <p> {{user.username}} 123123</p>-->
+<!--      </div>-->
+<!--      123-->
+<!--    </nav>-->
   </header>
 
     <ng-template #content let-c="close" let-d="dismiss">
       <div class="modal-header">
-        <h4 class="modal-title" id="modal-basic-title">Регистрация</h4>
+        <h4 class="modal-title" id="modal-basic-title">Авторизация</h4>
         <button type="button" class="btn-close" aria-label="Close" (click)="d('Cross click')"></button>
       </div>
       <div class="modal-body d-grid">
-        <input placeholder="регистрация" class="rounded border pl-[5px] mb-[10px]">
-        <input placeholder="пароль" class="rounded border pl-[5px] mb-[10px]">
+        <input placeholder="логин" [(ngModel)]="dataForm.username" required class="rounded border pl-[5px] mb-[10px]">
+        <input placeholder="пароль" type="password" [(ngModel)]="dataForm.password" required class="rounded border pl-[5px] mb-[10px]">
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-outline-dark" (click)="c('Save click')">Продолжить</button>
+        <button type="button" class="btn btn-outline-dark" (click)="d(login())">Продолжить</button>
       </div>
     </ng-template>
   </div>
