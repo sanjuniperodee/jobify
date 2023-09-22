@@ -68,18 +68,23 @@ header{
 }
 
 .close-icon {
-  display: flex;
-  flex-direction: column;
-  cursor: pointer;
-  z-index: 1;
+  display: none;
+
 }
 
-.close-icon .line {
-  width: 25px;
-  height: 3px;
-  background-color: white;
-  margin: 4px 0;
-}
+/*.close-icon {*/
+/*  display: flex;*/
+/*  flex-direction: column;*/
+/*  cursor: pointer;*/
+/*  z-index: 1;*/
+/*}*/
+
+/*.close-icon .line {*/
+/*  width: 25px;*/
+/*  height: 3px;*/
+/*  background-color: white;*/
+/*  margin: 4px 0;*/
+/*}*/
 
 .nav.active {
   display: none;
@@ -108,6 +113,13 @@ header{
 @media screen and (max-width: 768px) {
   .burger {
     display: flex;
+  }
+
+  .close-icon{
+    display: flex;
+    color: white;
+    width: 50px;
+    z-index: 2;
   }
 
   .nav {
