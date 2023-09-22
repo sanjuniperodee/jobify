@@ -27,8 +27,12 @@ export class OfferComponent implements OnInit {
     });
   }
 
+  // open(content:any) {
+  //   this.modalService.open(content, { size: 'lg' });
+  // }
+
   open(content:any) {
-    this.modalService.open(content, { size: 'lg' });
+    this.modalService.open(content);
   }
 
 

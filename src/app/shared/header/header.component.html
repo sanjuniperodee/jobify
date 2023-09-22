@@ -12,6 +12,10 @@
         <div class="line"></div>
         <div class="line"></div>
       </div>
+      <div class="close-icon bg-red-600" *ngIf="menuOpen"  (click)="toggleMenu()">
+        &#10006;
+      </div>
+
       <nav class="nav">
         <a href="" class="link">Главная</a>
         <a routerLink="/job" class="link">Найти работу</a>

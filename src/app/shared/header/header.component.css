@@ -67,6 +67,20 @@ header{
   transition: 0.4s;
 }
 
+.close-icon {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.close-icon .line {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 4px 0;
+}
+
 .nav.active {
   display: none;
   flex-direction: column;
@@ -82,6 +96,7 @@ header{
 .nav.active .link {
   margin: 10px 0;
 }
+
 
 @media (max-width: 576px) {
   header{
