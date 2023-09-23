@@ -56,7 +56,7 @@ export class Service {
         'Authorization': `Bearer ${this.getToken()}`,
     });
     // return this.http.post<any>(this.apiUrl+"/jobs/saveJob", formData, {headers});
-    return this.http.get<any[]>("http://127.0.0.1:8000/get_jobs", {headers});
+    return this.http.get<any[]>("http://185.146.1.93:8000/get_jobs", {headers});
   }
 
   postOtklick(dataForm: any): Observable<any> {
@@ -65,7 +65,7 @@ export class Service {
       'Authorization': `Bearer ${this.getToken()}`,
     });
     console.log(dataForm)
-    return this.http.post<any>("http://127.0.0.1:8000/add_otklick/" + dataForm.orderId + "/" + dataForm.userId + "/" + dataForm.description + "/" + dataForm.price , dataForm,{headers});
+    return this.http.post<any>("http://185.146.1.93:8000/add_otklick/" + dataForm.orderId + "/" + dataForm.userId + "/" + dataForm.description + "/" + dataForm.price , dataForm,{headers});
   }
 
   getJobByUserId(userId: string): any{
@@ -73,14 +73,14 @@ export class Service {
       'Content-Type': 'application/json',
       'Authorization': `Bearer ${this.getToken()}`,
     });
-      return this.http.get<any>("http://127.0.0.1:8000/get_jobs_by_id/" + userId, {headers})
+      return this.http.get<any>("http://185.146.1.93:8000/get_jobs_by_id/" + userId, {headers})
   }
   getJobById(jobId: string): any{
     const headers = new HttpHeaders({
       'Content-Type': 'application/json',
       'Authorization': `Bearer ${this.getToken()}`,
     });
-    return this.http.get<any>("http://127.0.0.1:8000/get_job_by_id/" + jobId, {headers})
+    return this.http.get<any>("http://185.146.1.93:8000/get_job_by_id/" + jobId, {headers})
   }
 
   getCategories(): Observable<any[]> {
