@@ -67,10 +67,11 @@ header{
   transition: 0.4s;
 }
 
-.close-icon {
+.close-icon{
   display: none;
-
+  cursor: pointer;
 }
+
 
 /*.close-icon {*/
 /*  display: flex;*/
@@ -106,7 +107,15 @@ header{
 @media (max-width: 576px) {
   header{
     padding: 0 40px;
+  }
 
+  .container-header{
+    gap: 104px;
+  }
+
+  .line{
+    width: 35px;
+    height: 4px;
   }
 
 }
@@ -114,6 +123,15 @@ header{
 @media screen and (max-width: 768px) {
   .burger {
     display: flex;
+  }
+
+  .line{
+    width: 35px;
+    height: 4px;
+  }
+
+  header{
+    padding: 0 15px;
   }
 
   .close-icon{

@@ -12,11 +12,10 @@
         <div class="line"></div>
         <div class="line"></div>
       </div>
-      <div class="close-icon col-sm-12 col-md-12" *ngIf="menuOpen"  (click)="toggleMenu()">
-            &#10006;
+      <div class="close-icon" *ngIf="menuOpen"  (click)="toggleMenu()" style="width: 80px">
+            <img src="assets/icon/close_white_24dp.svg">
       </div>
-<!--      &#10060;-->
-      <nav class="nav" [ngClass]="{'open': menuOpen}">
+      <nav class="nav">
         <a href="" class="link">Главная</a>
         <a routerLink="/job" class="link">Найти работу</a>
         <a routerLink="/about" class="link">О компании</a>
@@ -36,7 +35,7 @@
       <a routerLink="/about" class="link">О компании</a>
       <a href="" class="link">Связаться</a>
       <div class="nav-reg2 d-flex gap-1">
-        <p routerLink="/registration" class="cursor-pointer pnav w-[135px] bg-[#060043]">Регистрация</p>
+        <p routerLink="/registration" class ="cursor-pointer pnav w-[135px] bg-[#060043]">Регистрация</p>
         <p  class="cursor-pointer pnav w-[127px]  bg-white text-black"  (click)="open(content)">Войти</p>
       </div>
     </nav>
