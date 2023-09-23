@@ -42,13 +42,14 @@
       <a routerLink="/job" class="link">Найти работу</a>
       <a routerLink="/about" class="link">О компании</a>
       <a href="" class="link">Связаться</a>
-      <div *ngIf="!loggedIn" class="nav-reg2 d-flex gap-1">
+      <div *ngIf="!loggedIn" class="d-flex gap-5">
         <p routerLink="/registration" class="cursor-pointer pnav w-[135px] bg-[#060043]">Регистрация</p>
         <p  class="cursor-pointer pnav w-[127px]  bg-white text-black"  (click)="open(content)">Войти</p>
       </div>
-      <div *ngIf="!loggedIn" class="nav-reg2 d-flex gap-1">
-        <p> {{user.username}} 123123</p>
-      </div>
+        <div *ngIf="loggedIn" class="link d-flex">
+          <img src="/assets/img/profile.png" alt="" class="w-[35px]">
+          <a href="/profile">{{user.username}}</a>
+        </div>
     </nav>
   </header>
 

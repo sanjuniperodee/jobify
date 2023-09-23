@@ -4,30 +4,13 @@
         <div class="">
             <h2 class="h2-zakaz mt-[80px] mb-[31px]">Мои заказы</h2>
         </div>
-        <div class="orders relative">
+        <div class="orders relative" routerLink="/zakaz2">
             <div class="create-order">
               <div class="block">
                 <p class="p-zakaz">Создать заказ</p>
-                <div *ngIf="open" class="mt-[20px]">
-                  <div class="flex gap-[29px]">
-                    <input type="text" placeholder="Услуга или специалист" class="create-input">
-                    <button class="create-btn">Найти</button>
-                  </div>
-
-                  <div class="flex gap-12 mt-22">
-                    <div class="vacans">Казахский язык онлайн</div>
-                    <div class="vacans">Юрист-консультант</div>
-                    <div class="vacans">Клининг-услуги</div>
-                  </div>
-                </div>
-              </div>
-              <div class="">
-                <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none" (click)="openWindow()" class="cursor-pointer absolute left-[94rem] top-[17px]">
-                  <path d="M17.0002 7.08337V26.9167M7.0835 17H26.9168" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-              </div>
             </div>
           </div>
+        </div>
 
 
 
@@ -54,16 +37,19 @@
                 <div class="flex  justify-between">
                      <div class="flex gap-[19px] items-center">
                         <h2 class="p-zakaz" routerLink="/otklik/{{order.id}}">{{order.content_work}}</h2>
-                        <div class="number">{{order.otkliki.length}}</div>
                     </div>
                     <div class="status-zakaza ">11 июля 2023</div>
                 </div>
-                <div class="status-zakaza mt-[14px]">
-                    {{order.description}}
+                <div class="status-zakaza mt-[14px] flex justify-content-between">
+                  <div>
+                    <p>Откликов: {{order.otkliki.length}}</p>
+                    <p>Описаное: {{order.description}}</p>
+                  </div>
+                  <div class="w-[50px] h-[50px] bg-[#D9D9D9] rounded-[20px] mt-[13px]" >
+                    <img src="http://127.0.0.1:8000{{order.image}}">
+                  </div>
                 </div>
-                <div class="w-[40px] h-[40px] bg-[#D9D9D9] rounded-[20px] mt-[13px]" >
-                  <img src="http://127.0.0.1:8000{{order.image}}">
-                </div>
+
             </div>
         </div>
       </div>

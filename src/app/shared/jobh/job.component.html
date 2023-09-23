@@ -1,8 +1,8 @@
-<div class="mt-[2.31rem] text-center">
+<div class="my-[2.31rem] text-center">
     <p class="job-p">Популярные вакансии</p>
 </div>
 
-<div *ngFor="let item of data" class="row justify-content-between p-5 mx-[10%] bg-light border-1" style="height: max-content">
+<div *ngFor="let item of data" class="row justify-content-between py-5 px-3 mb-5 mx-[10%] bg-light border-1" style="height: max-content">
   <div class="col-lg-8 col-md-9 col-12 py-5">
     <a href="/offer/{{item.id}}" style="color: dodgerblue; font-size: 120%">{{item.content_work}}</a>
     <p style="font-size: 180%; font-weight: bold; margin-bottom: 10px">до {{item.price}}₸</p>
@@ -10,5 +10,5 @@
     <div class="d-flex mb-[20px]"><img src="/assets/icon/mdi_location.svg" alt="" class="w-[24px] h-[24px]"><p>{{item.location}}</p></div>
     <button class="job-btn px-5"><a [routerLink]="['/offer', item.id]">Подробнее</a></button>
   </div>
-  <img class="col-lg-4 col-md-3 col-12 pt-5 w-100" src="http://185.146.1.93:8000{{item.image}}" alt="">
+  <img class="col-lg-4 col-md-3 col-12 pt-5 w-[200px] h-[200px]" src="http://185.146.1.93:8000{{item.image}}" alt="">
 </div>
