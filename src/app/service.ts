@@ -16,14 +16,14 @@ export class Service {
     constructor(private http: HttpClient) { }
 
 
-    getUser(): Observable<any> {
+    getUser(id: string): Observable<any> {
       console.log(localStorage.getItem('authToken'))
-      const url = `${this.apiUrl}/api/v1/users/` + localStorage.getItem('userId')
+      const url = `${this.apiUrl}/api/v1/users/` + id
       const headers = new HttpHeaders({
         'Content-Type': 'application/json',
         'Authorization': 'Bearer ' + localStorage.getItem('authToken')
       });
-      return this.http.get<any[]>(url, {headers});
+      return this.http.get<any>(url, {headers});
     }
 
   login(username: string, password: string): Observable<any> {
@@ -51,33 +51,36 @@ export class Service {
   }
 
   getJobs(): Observable<any> {
-    // const headers = new HttpHeaders({
-    //   'Content-Type': 'application/json',
-    //     'Authorization': `Bearer ${this.getToken()}`,
-    // });
-    // let data = {
-    //   "category_id": 1,
-    //   "company": "Kaspi.kz",
-    //   "content_work": "Нужно разработать магазин использую CMS систему",
-    //   "description": "Разработка онлайн магазина",
-    //   "experience": "Нужен человек с опытом от 3-х лет",
-    //   "location": "Алматы",
-    //   "price": 1500000,
-    //   "skills": "Django, Nginx, Angular, Uwsgi, Docker",
-    //   "subcategory_id": 1,
-    //   "user_id": 28,
-    // }
-    //
-    // return this.http.post<any>(this.apiUrl+"/jobs/saveJob", data, {headers});
+    const headers = new HttpHeaders({
+      'Content-Type': 'application/json',
+        'Authorization': `Bearer ${this.getToken()}`,
+    });
+    // return this.http.post<any>(this.apiUrl+"/jobs/saveJob", formData, {headers});
+    return this.http.get<any[]>("http://127.0.0.1:8000/get_jobs", {headers});
+  }
+
+  postOtklick(dataForm: any): Observable<any> {
     const headers = new HttpHeaders({
       'Content-Type': 'application/json',
       'Authorization': `Bearer ${this.getToken()}`,
     });
-    return this.http.get<any[]>(this.apiUrl+"/jobs/allJobs", {headers});
+    console.log(dataForm)
+    return this.http.post<any>("http://127.0.0.1:8000/add_otklick/" + dataForm.orderId + "/" + dataForm.userId + "/" + dataForm.description + "/" + dataForm.price , dataForm,{headers});
   }
 
+  getJobByUserId(userId: string): any{
+    const headers = new HttpHeaders({
+      'Content-Type': 'application/json',
+      'Authorization': `Bearer ${this.getToken()}`,
+    });
+      return this.http.get<any>("http://127.0.0.1:8000/get_jobs_by_id/" + userId, {headers})
+  }
   getJobById(jobId: string): any{
-      return this.http.get<any>(this.apiUrl+"/jobs/" + jobId)
+    const headers = new HttpHeaders({
+      'Content-Type': 'application/json',
+      'Authorization': `Bearer ${this.getToken()}`,
+    });
+    return this.http.get<any>("http://127.0.0.1:8000/get_job_by_id/" + jobId, {headers})
   }
 
   getCategories(): Observable<any[]> {

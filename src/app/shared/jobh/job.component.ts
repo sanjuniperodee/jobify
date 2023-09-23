@@ -13,7 +13,7 @@ export class JobComponent {
 
   ngOnInit(): void {
     this.apiService.getJobs().subscribe((response: any) => {
-      this.data = response;
+      this.data = response.data;
       console.log(this.data)
     });
   }

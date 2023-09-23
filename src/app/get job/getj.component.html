@@ -28,100 +28,16 @@
 
 
   <div class="vacans-wrap col-lg-8 col-md-8 col-12">
-    <div class="vacancies-container mt-[86px]">
-      <div class="vacancies-wrap1">
-        <div class="img-vacans mb-[30px]"></div>
+    <div *ngFor="let item of data" class="row justify-content-between px-5 bg-light border-1" style="height: max-content">
+      <div class="col-lg-8 col-md-9 col-12 py-5">
+        <a href="/offer/{{item.id}}" style="color: dodgerblue; font-size: 120%">{{item.content_work}}</a>
+        <p style="font-size: 180%; font-weight: bold; margin-bottom: 10px">до {{item.price}}₸</p>
+        <p class="pl-[6px]">{{item.company}}</p>
+        <div class="d-flex mb-[20px]"><img src="/assets/icon/mdi_location.svg" alt="" class="w-[24px] h-[24px]"><p>{{item.location}}</p></div>
+        <button class="btn-vacans mb-[12px]" routerLink="/offer/{{item.id}}">Откликнуться</button>
+        <p >7 часов назад</p>
       </div>
-
-
-      <div>
-        <h2 class="vacans-title mb-[19px]">Digital-маркетолог</h2>
-        <div class="vacans-info row">
-          <p class="vacans-text col-lg-4 col-md-4 col-12">Креативное агенство</p>
-          <p class="vacans-text col-lg-4 col-md-4 col-12">Алматы</p>
-          <p class="money col-lg-4 col-md-4 col-12">$3500-$4000</p>
-        </div>
-        <div class="otklik">
-          <button class="btn-vacans mb-[12px]" routerLink="/offer">Откликнуться</button>
-          <p class="time-vacans">7 часов назад</p>
-        </div>
-      </div>
-    </div>
-    <div class="vacancies-container mt-[86px]">
-      <div class="vacancies-wrap1">
-        <div class="img-vacans mb-[30px]"></div>
-      </div>
-
-
-      <div>
-        <h2 class="vacans-title mb-[19px]">Digital-маркетолог</h2>
-        <div class="vacans-info row">
-          <p class="vacans-text col-lg-4 col-md-4 col-12">Креативное агенство</p>
-          <p class="vacans-text col-lg-4 col-md-4 col-12">Алматы</p>
-          <p class="money col-lg-4 col-md-4 col-12">$3500-$4000</p>
-        </div>
-        <div class="otklik">
-          <button class="btn-vacans mb-[12px]" routerLink="/offer">Откликнуться</button>
-          <p class="time-vacans">7 часов назад</p>
-        </div>
-      </div>
-    </div>
-    <div class="vacancies-container mt-[86px]">
-      <div class="vacancies-wrap1">
-        <div class="img-vacans mb-[30px]"></div>
-      </div>
-
-
-      <div>
-        <h2 class="vacans-title mb-[19px]">Digital-маркетолог</h2>
-        <div class="vacans-info row">
-          <p class="vacans-text col-lg-4 col-md-4 col-12">Креативное агенство</p>
-          <p class="vacans-text col-lg-4 col-md-4 col-12">Алматы</p>
-          <p class="money col-lg-4 col-md-4 col-12">$3500-$4000</p>
-        </div>
-        <div class="otklik">
-          <button class="btn-vacans mb-[12px]" routerLink="/offer">Откликнуться</button>
-          <p class="time-vacans">7 часов назад</p>
-        </div>
-      </div>
-    </div>
-    <div class="vacancies-container mt-[86px]">
-      <div class="vacancies-wrap1">
-        <div class="img-vacans mb-[30px]"></div>
-      </div>
-
-
-      <div>
-        <h2 class="vacans-title mb-[19px]">Digital-маркетолог</h2>
-        <div class="vacans-info row">
-          <p class="vacans-text col-lg-4 col-md-4 col-12">Креативное агенство</p>
-          <p class="vacans-text col-lg-4 col-md-4 col-12">Алматы</p>
-          <p class="money col-lg-4 col-md-4 col-12">$3500-$4000</p>
-        </div>
-        <div class="otklik">
-          <button class="btn-vacans mb-[12px]" routerLink="/offer">Откликнуться</button>
-          <p class="time-vacans">7 часов назад</p>
-        </div>
-      </div>
-    </div>
-    <div class="vacancies-container mt-[86px]">
-      <div class="vacancies-wrap1">
-        <div class="img-vacans mb-[30px]"></div>
-      </div>
-
-
-      <div>
-        <h2 class="vacans-title mb-[19px]">Digital-маркетолог</h2>
-        <div class="vacans-info row">
-          <p class="vacans-text col-lg-4 col-md-4 col-12">Креативное агенство</p>
-          <p class="vacans-text col-lg-4 col-md-4 col-12">Алматы</p>
-          <p class="money col-lg-4 col-md-4 col-12">$3500-$4000</p>
-        </div>
-        <div class="otklik">
-          <button class="btn-vacans mb-[12px]" routerLink="/offer">Откликнуться</button>
-          <p class="time-vacans">7 часов назад</p>
-        </div>
-      </div>
+      <img class="col-lg-4 col-md-3 col-12 pt-5 job-img h-[180px] w-[180px]" width="180px" height="180px" src="" alt="">
     </div>
   </div>
 

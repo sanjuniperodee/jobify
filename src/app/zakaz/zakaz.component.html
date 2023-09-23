@@ -13,7 +13,7 @@
                     <input type="text" placeholder="Услуга или специалист" class="create-input">
                     <button class="create-btn">Найти</button>
                   </div>
-              
+
                   <div class="flex gap-12 mt-22">
                     <div class="vacans">Казахский язык онлайн</div>
                     <div class="vacans">Юрист-консультант</div>
@@ -28,7 +28,7 @@
               </div>
             </div>
           </div>
-          
+
 
 
         <!-- <div class="orders">
@@ -49,35 +49,21 @@
                 <path d="M17.0002 7.08337V26.9167M7.0835 17H26.9168" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
         </div> -->
-        <div class="orders1 mt-[10px]">
+        <div *ngFor="let order of zakazy" class="orders1 mt-[10px]">
             <div class="">
                 <div class="flex  justify-between">
                      <div class="flex gap-[19px] items-center">
-                        <h2 class="p-zakaz">Юрист-консультант</h2>
-                        <div class="number">3</div>
+                        <h2 class="p-zakaz" routerLink="/otklik/{{order.id}}">{{order.content_work}}</h2>
+                        <div class="number">{{order.otkliki.length}}</div>
                     </div>
                     <div class="status-zakaza ">11 июля 2023</div>
                 </div>
                 <div class="status-zakaza mt-[14px]">
-                    Заказ закрыт для откликов
+                    {{order.description}}
                 </div>
-                <div class="w-[40px] h-[40px] bg-[#D9D9D9] rounded-[20px] mt-[13px]" ></div>
-            </div>
-        </div>
-
-        <div class="orders1 mt-[10px]">
-            <div class="">
-                <div class="flex justify-between">
-                     <div class="flex gap-[19px] items-center">
-                        <h2 class="p-zakaz">Веб-дизайнер</h2>
-                        <div class="number">3</div>
-                    </div>
-                    <div class="status-zakaza ml-[258px]">11 июля 2023</div>
+                <div class="w-[40px] h-[40px] bg-[#D9D9D9] rounded-[20px] mt-[13px]" >
+                  <img src="http://127.0.0.1:8000{{order.image}}">
                 </div>
-                <div class="status-zakaza mt-[14px]">
-                    Заказ отменен
-                </div>
-                <div class="w-[40px] h-[40px] bg-[#D9D9D9] rounded-[20px] mt-[13px]" ></div>
             </div>
         </div>
       </div>

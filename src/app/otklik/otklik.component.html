@@ -2,100 +2,49 @@
     <app-creating>
         <div class="ml-[42px] flex gap-[150px] mt-[55px]">
             <div class="">
-                <div class="nav mb-[27px]">Заказ</div>
-                <hr class="nav-border">
-                <div class="nav  mt-[15px] mb-[27px]">Поддержка</div>
-                <hr class="nav-border">
-                <div class="nav mt-[15px] mb-[27px]">Специалисты</div>
-                <hr class="nav-border">
                 <div class="nav mt-[15px] mb-[39px] flex items-center gap-[18px]"   >
-                    <p>Получать отклики</p>
-                    <div class="w-[33px] h-[19px] rounded-[30px] bg-white">
-                        <div class="w-[15px] h-[17px] rounded-[30px] bg-[#060043]">
-                        </div>
+                    <p>Ваши отклики</p>
+                </div>
+
+                <div *ngFor="let i of data.otkliki" class="flex gap-[14px] items-center mb-[23px]">
+                    <div class="w-[48px] h-[52px] rounded-[9px] bg-white"></div>
+                    <div class="">
+                        <h2 class="h2-text">{{i.user.firstName}} {{i.user.lastName}}</h2>
+                        <p class="otziv mt-[3px]">Предлагает: {{i.price}} тенге</p>
+                        <p class="p-text">{{i.description}}</p>
+                        <p class="p-text">Контакты: {{i.user.email}}</p>
+
                     </div>
                 </div>
 
-                <div class="flex gap-[14px] items-center mb-[23px]">
-                    <div class="w-[48px] h-[52px] rounded-[9px] bg-white"></div>
-                    <div class="">
-                        <h2 class="h2-text">Азамат Азаматов</h2>
-                        <p class="otziv mt-[3px]">5 отзывов</p>
-                        <p class="p-text">сообщение</p>
-                    </div>
-                </div>
 
-                <div class="flex gap-[14px] items-center mb-[23px]">
-                    <div class="w-[48px] h-[52px] rounded-[9px] bg-white"></div>
-                    <div class="">
-                        <h2 class="h2-text">Азамат Азаматов</h2>
-                        <p class="otziv mt-[3px]">5 отзывов</p>
-                        <p class="p-text">сообщение</p>
-                    </div>
-                </div>
-
-                <div class="flex gap-[14px] items-center mb-[23px]">
-                    <div class="w-[48px] h-[52px] rounded-[9px] bg-white"></div>
-                    <div class="">
-                        <h2 class="h2-text">Азамат Азаматов</h2>
-                        <p class="otziv mt-[3px]">5 отзывов</p>
-                        <p class="p-text">сообщение</p>
-                    </div>
-                </div>
-
-                <div class="flex gap-[14px] items-center mb-[23px]">
-                    <div class="w-[48px] h-[52px] rounded-[9px] bg-white"></div>
-                    <div class="">
-                        <h2 class="h2-text">Азамат Азаматов</h2>
-                        <p class="otziv mt-[3px]">5 отзывов</p>
-                        <p class="p-text">сообщение</p>
-                    </div>
-                </div>
-
-                <div class="flex gap-[14px] items-center mb-[23px]">
-                    <div class="w-[48px] h-[52px] rounded-[9px] bg-white"></div>
-                    <div class="">
-                        <h2 class="h2-text">Азамат Азаматов</h2>
-                        <p class="otziv mt-[3px]">5 отзывов</p>
-                        <p class="p-text">сообщение</p>
-                    </div>
-                </div>
-
-                <div class="flex gap-[14px] items-center">
-                    <div class="w-[48px] h-[52px] rounded-[9px] bg-white"></div>
-                    <div class="">
-                        <h2 class="h2-text">Азамат Азаматов</h2>
-                        <p class="otziv mt-[3px]">5 отзывов</p>
-                        <p class="p-text">сообщение</p>
-                    </div>
-                </div>
             </div>
 
 
             <div class="">
-                <h2 class="nav mb-[8px]">Веб-дизайн</h2>
+                <h2 class="nav mb-[8px]">{{data.content_work}}</h2>
                 <p class="desc">10 специалистов посмотрели ваш заказ</p>
                 <div class="mt-[38px]">
                     <p class="desc2 mb-[4px]">Что сделать?</p>
-                    <p class="desc3">Дизайн сайта</p>
+                    <p class="desc3">{{data.description}}</p>
                     <hr class="hr">
                 </div>
 
                 <div class="mt-[38px]">
-                    <p class="desc2 mb-[4px]">Какой сайт?</p>
-                    <p class="desc3">Лендинг</p>
+                    <p class="desc2 mb-[4px]">Какой нужы навыки?</p>
+                    <p class="desc3">{{data.skills}}</p>
                     <hr class="hr">
                 </div>
 
                 <div class="mt-[38px]">
-                    <p class="desc2 mb-[4px]">Платформа/p>
-                    <p class="desc3">Tilda</p>
+                    <p class="desc2 mb-[4px]">Требуемый опыт</p>
+                    <p class="desc3">{{data.experience}}</p>
                     <hr class="hr">
                 </div>
 
                 <div class="mt-[38px]">
-                    <p class="desc2 mb-[4px]">Опишите детали проекта</p>
-                    <p class="desc3">Не указано</p>
+                    <p class="desc2 mb-[4px]">Название компании</p>
+                    <p class="desc3">{{data.company}}</p>
                     <hr class="hr">
                 </div>
 
@@ -107,7 +56,7 @@
 
                 <div class="mt-[38px]">
                     <p class="desc2 mb-[4px]">Сколько вы готовы заплатить за работу?</p>
-                    <p class="desc3">Не важно</p>
+                    <p class="desc3">{{data.price}} тенге</p>
                     <hr class="hr">
                 </div>
 

@@ -1,22 +1,13 @@
-<div class="mt-[7.31rem] text-center">
-    <p class="job-title mb-[1.18rem]">Недавние вакансии</p>
+<div class="mt-[2.31rem] text-center">
     <p class="job-p">Популярные вакансии</p>
 </div>
-<div *ngFor="let item of data" class="job-container">
-    <div class="job-wrap mt-[90px]">
-        <img src="" alt="" class="job-img">
-        <div class="wrap-wrap">
-            <p class="wrap-text">{{item.content_work}}</p>
-            <p class="wrap-p pt-[19px]">{{item.company}}</p>
-        </div>
-        <div class="geo pt-[60px]">
-            <img src="/assets/icon/mdi_location.svg" alt="" class="w-[24px] h-[24px]">
-            <p>{{item.location}}</p>
-        </div>
-        <div class="valuable ml-[5.93rem] mr-[8.68rem] pt-[60px]">{{item.price}}₸</div>
-        <div class="text-center">
-            <button class="job-btn"><a [routerLink]="['/offer', item.id]">Подробнее</a></button>
-            <p class="pt-[19px]">7 дней назад</p>
-        </div>
+<div *ngFor="let item of data" class="d-flex justify-content-between p-5 mx-[10%] my-5 bg-light border-1">
+    <div class="d-flex flex-column ">
+      <a href="/" style="color: dodgerblue; font-size: 120%">{{item.content_work}}</a>
+      <p style="font-size: 180%; font-weight: bold; margin-bottom: 10px">до {{item.price}}₸</p>
+      <p class="pl-[6px]">{{item.company}}</p>
+      <div class="d-flex mb-[20px]"><img src="/assets/icon/mdi_location.svg" alt="" class="w-[24px] h-[24px]"><p>{{item.location}}</p></div>
+      <button class="job-btn"><a [routerLink]="['/offer', item.id]">Подробнее</a></button>
     </div>
+    <img src="http://127.0.0.1:8000{{item.image}}" alt="" class="job-img h-[180px] w-[180px]">
 </div>

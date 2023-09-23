@@ -22,7 +22,7 @@ const routes: Routes = [
       { path: '', component: HomeComponent },
       { path:'about', component: AboutComponent},
       { path:'job', component: GetjComponent},
-      { path: 'offer', component: OfferComponent },
+      { path: 'offer/:id', component: OfferComponent },
       {path:'registration', component: RegistrationComponent},
       {path:'zakaz', component:ZakazComponent},
       {path:'zakaz2', component:ZakazTwoComponent},
@@ -32,7 +32,7 @@ const routes: Routes = [
       {path:'chat', component:ZakazLayuoComponent},
       {path:'balans', component:BalansComponent},
       {path:'anketa', component:AnketaComponent},
-      {path:'otklik', component:OtklikComponent},
+      {path:'otklik/:id', component:OtklikComponent},
       {path:'ispoluser', component:IspolnitelUserComponent}
 ];
 

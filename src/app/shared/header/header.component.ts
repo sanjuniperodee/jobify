@@ -51,9 +51,10 @@ export class HeaderComponent {
         console.log(error)
       }
     )
-  }
+}
   ngOnInit(){
-    this.service.getUser().subscribe(
+    // @ts-ignore
+    this.service.getUser(localStorage.getItem('userId').toString()).subscribe(
       (response)=>{
         console.log(response)
         this.user = response

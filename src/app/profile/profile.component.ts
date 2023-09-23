@@ -10,7 +10,8 @@ export class ProfileComponent {
   user:any
   constructor(private service:Service){}
   ngOnInit(){
-    this.service.getUser().subscribe(
+    // @ts-ignore
+    this.service.getUser(localStorage.getItem('userId').toString()).subscribe(
       (response)=>{
         this.user = response
         console.log(response)

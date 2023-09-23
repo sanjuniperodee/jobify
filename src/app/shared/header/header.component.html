@@ -4,7 +4,7 @@
     'background-repeat': repeatMode,
     'background-size': backgroundSize
   }">
-  <header class="px-[10%]">
+  <header class="px-[5%] bg-dark">
     <div class="d-flex justify-content-between align-items-center">
       <img src="assets/img/Logo.png" class="h-[80px]" alt="">
       <div class="burger" (click)="toggleMenu()">
@@ -16,11 +16,11 @@
             &#10006;
       </div>
 <!--      &#10060;-->
-      <nav class="nav" [ngClass]="{'open': menuOpen}">
-        <a href="" class="link">Главная</a>
-        <a routerLink="/job" class="link">Найти работу</a>
-        <a routerLink="/about" class="link">О компании</a>
-        <a href="" class="link">Связаться</a>
+      <nav class="d-none d-md-flex  gap-5 text-white" [ngClass]="{'open': menuOpen}">
+        <a href="" class="">Главная</a>
+        <a routerLink="/job" class="">Найти работу</a>
+        <a routerLink="/about" class="">О компании</a>
+        <a href="" class="">Связаться</a>
       </nav>
       <div *ngIf="!loggedIn" class="nav-reg">
         <p routerLink="/registration" class="cursor-pointer pnav w-[135px] bg-[#060043]">Регистрация</p>
@@ -37,20 +37,19 @@
     <div style="display: flex; justify-content: center; width: 100%;">
       <hr style="background: rgba(255, 255, 255, 0.16) ; width: 90%; ">
     </div>
-<!--    <nav class="nav active" *ngIf="menuOpen">-->
-<!--      <a href="" class="link">Главная</a>-->
-<!--      <a routerLink="/job" class="link">Найти работу</a>-->
-<!--      <a routerLink="/about" class="link">О компании</a>-->
-<!--      <a href="" class="link">Связаться</a>-->
-<!--      <div *ngIf="!loggedIn" class="nav-reg2 d-flex gap-1">-->
-<!--        <p routerLink="/registration" class="cursor-pointer pnav w-[135px] bg-[#060043]">Регистрация</p>-->
-<!--        <p  class="cursor-pointer pnav w-[127px]  bg-white text-black"  (click)="open(content)">Войти</p>-->
-<!--      </div>-->
-<!--      <div *ngIf="!loggedIn" class="nav-reg2 d-flex gap-1">-->
-<!--        <p> {{user.username}} 123123</p>-->
-<!--      </div>-->
-<!--      123-->
-<!--    </nav>-->
+    <nav class="nav active" *ngIf="menuOpen">
+      <a href="" class="link">Главная</a>
+      <a routerLink="/job" class="link">Найти работу</a>
+      <a routerLink="/about" class="link">О компании</a>
+      <a href="" class="link">Связаться</a>
+      <div *ngIf="!loggedIn" class="nav-reg2 d-flex gap-1">
+        <p routerLink="/registration" class="cursor-pointer pnav w-[135px] bg-[#060043]">Регистрация</p>
+        <p  class="cursor-pointer pnav w-[127px]  bg-white text-black"  (click)="open(content)">Войти</p>
+      </div>
+      <div *ngIf="!loggedIn" class="nav-reg2 d-flex gap-1">
+        <p> {{user.username}} 123123</p>
+      </div>
+    </nav>
   </header>
 
     <ng-template #content let-c="close" let-d="dismiss">

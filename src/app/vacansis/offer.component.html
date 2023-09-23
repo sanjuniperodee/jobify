@@ -1,18 +1,19 @@
 <app-header background="/assets/img/about.png" backgroundGradient="linear-gradient(rgba(0,0,0,0.42), rgba(0,0,0,0.42))"  height="600px" repeatMode="no-repeat" backgroundSize="cover">
-  <div class="title-job h-[320px]">UI/UX Designer</div>
+  <div class="title-job h-[320px]">{{category}}</div>
 </app-header>
 
 
 <div class="row px-5 mb-[124px]">
-    <div class="col-lg-8 col-md-7 col-12">
-        <div class="offer-img"></div>
-        <div class="offer-h2">{{data.content_work}}</div>
-        <div class="offer-desc mb-[70px]">
-            <p class="offer-text">{{data.company}}</p>
-            <p class="offer-text">{{data.location}}</p>
-            <p class="money">{{data.price}}₸</p>
+    <div class="col-lg-8 col-md-7 col-12 info-desck">
+      <div class="d-flex">
+        <img class="offer-img mr-5" src="http://127.0.0.1:8000{{data.image}}">
+        <div>
+          <div class="offer-h2">{{data.content_work}}</div>
+          <p class="offer-text">{{data.company}}</p>
+          <p class="offer-text">{{data.location}}</p>
         </div>
-        <div class="offer-info">
+      </div>
+        <div class="offer-info mt-5">
             <h2 class="info-h2 mb-[25px]">Содержание работы</h2>
             <div class="info-text mb-[79px]">{{data.description}}
             </div>
@@ -38,46 +39,18 @@
                 <div class="desck-1">
                     <p class="offer-text leading-10">Дата публикации:</p>
                     <p class="offer-text leading-10">Локация:</p>
-                    <p class="offer-text leading-10">Вакансия:</p>
-                    <p class="offer-text leading-10">Тип занятости:</p>
-                    <p class="offer-text leading-10">Зарплата:</p>
-                    <p class="offer-text leading-10">Дата подачи заявки:</p>
+                    <p class="offer-text leading-10">Название работы:</p>
+                    <p class="offer-text leading-10">Оплата:</p>
                 </div>
 
                 <div class="desck-2">
                     <p class="offer-text leading-10 text-end">12 Авг. 2019</p>
-                    <p class="offer-text leading-10 text-end">Алматы</p>
-                    <p class="offer-text leading-10 text-end">03</p>
-                    <p class="offer-text leading-10 text-end">Полная занятость</p>
-                    <p class="offer-text leading-10 text-end">500 000 тг </p>
-                    <p class="offer-text leading-10 text-end">12 Сент. 2020</p>
+                    <p class="offer-text leading-10 text-end">{{data.location}}</p>
+                    <p class="offer-text leading-10 text-end">{{data.content_work}}</p>
+                    <p class="offer-text leading-10 text-end">{{data.price}} тг </p>
                 </div>
             </div>
             <button class="decck-btn mt-[30px]" (click)="open(content)" >Откликнуться</button>
-        </div>
-
-
-        <div class="about-us -mt-[56px]">
-                <h2 class="desck-h2 mt-[70px] mb-[22px]">Информация о компании</h2>
-                <p class="about-p mb-[22px]">Лалала</p>
-                <p class="info-text mt-[20px]">Lorem ipsum dolor sit amet  <br>consectetur adipisicing elit. <br>
-                     Lorem ipsum dolor sit amet <br> consectetur
-                </p>
-        </div>
-
-
-        <div class="flex gap-[34px] leading-[40px] mt-[60px]">
-            <div class="">
-                <p class="about-p">Название:</p>
-                <p class="about-p">Web:</p>
-                <p class="about-p">Email:</p>
-            </div>
-
-            <div class="">
-                <p class="about-contacts">Лалала</p>
-                <p class="about-contacts">lalala.com</p>
-                <p class="about-contacts">lalala@gmail.com</p>
-            </div>
         </div>
 
     </div>
@@ -86,19 +59,18 @@
   <ng-template #content let-c="close" let-d="dismiss">
     <div class="modal-header">
       <h4 class="modal-title" id="modal-basic-title">Отклик</h4>
-      <button type="button" class="btn-close" aria-label="Close" (click)="d('Cross click')"></button>
+      <button type="button" class="btn-close" aria-label="Close"  (click)="d('Cross click')"></button>
     </div>
     <div class="modal-body">
       <h2>Стоимость услуги</h2>
       <p class="mb-[10px]">Укажите примернно, о точнной сумме можно договориться с клиентом потом</p>
-      <input class="w-[100%] rounded mb-[15px]" style="border: 1px solid black">
-
+      <input class="w-[100%] rounded mb-[15px]" [(ngModel)]="dataForm1.price" style="border: 1px solid black">
       <h2 class="mb-[10px]">Предложение или вопрос клиенту</h2>
-      <textarea class="w-[100%] rounded mb-[15px]" style="border: 1px solid black"></textarea>
+      <textarea class="w-[100%] rounded mb-[15px]" [(ngModel)]="dataForm1.description" style="border: 1px solid black"></textarea>
 
     </div>
     <div class="modal-footer">
-      <button type="button" class="btn btn-outline-dark" (click)="c('Save click')">Откликнуться</button>
+      <button type="button" class="btn btn-outline-dark" (click)="otklick()">Откликнуться</button>
       <button type="button" class="btn btn-outline-dark" (click)="c('Save click')">Закрыть</button>
     </div>
   </ng-template>

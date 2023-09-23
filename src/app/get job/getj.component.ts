@@ -11,7 +11,13 @@ import {Service} from "../service";
 export class GetjComponent {
   constructor(private service:Service){}
   categories:any
+  data: any[] = [];
+
   ngOnInit(){
+    this.service.getJobs().subscribe((response: any) => {
+      this.data = response.data;
+      console.log(this.data)
+    });
     this.service.getCategories().subscribe(
       (response)=>{
         this.categories = response
