@@ -10,7 +10,13 @@ import {Router} from "@angular/router";
 })
 export class ZakazComponent {
   constructor(private service:Service, private router: Router){}
+  dataForm= {
+    'username' : '',
+    'password' : ''
+  };
+  create(){
 
+  }
   open:boolean=false
   zakazy:any
   ngOnInit() {

@@ -53,10 +53,37 @@ export class Service {
   getJobs(): Observable<any> {
     const headers = new HttpHeaders({
       'Content-Type': 'application/json',
-        'Authorization': `Bearer ${this.getToken()}`,
-    });
-    // return this.http.post<any>(this.apiUrl+"/jobs/saveJob", formData, {headers});
-    return this.http.get<any[]>("http://185.146.1.93:8000/get_jobs", {headers});
+      'Authorization': `Bearer ${this.getToken()}`,
+
+    })
+    const options = {
+      headers: headers,
+      method: "POST"
+    }
+    return this.http.get<any[]>("http://127.0.0.1:8000/get_jobs", {headers});
+    // let formData = new FormData();
+    // formData.append('category_id', '1');
+    // formData.append('company', 'value1');
+    // formData.append('content_work', 'value1');
+    // formData.append('description', 'value1');
+    // formData.append('location', 'value1');
+    // formData.append('price', '123');
+    // formData.append('skills', 'value1');
+    // formData.append('subcategory_id', '1');
+    // formData.append('user_id', '28');
+    // const data = {
+    //   category_id: 1,
+    //   company: '1',
+    //   content_work: '123',
+    //   description: '123',
+    //   location: '123',
+    //   price: 123,
+    //   skills: '123',
+    //   subcategory_id: 1,
+    //   user_id: 28
+    // }
+    //
+    // return this.http.post<any>(this.apiUrl+"/jobs/saveJob",  {data}, options);
   }
 
   postOtklick(dataForm: any): Observable<any> {
@@ -78,15 +105,28 @@ export class Service {
   getJobById(jobId: string): any{
     const headers = new HttpHeaders({
       'Content-Type': 'application/json',
-      'Authorization': `Bearer ${this.getToken()}`,
     });
     return this.http.get<any>("http://185.146.1.93:8000/get_job_by_id/" + jobId, {headers})
   }
 
-  getCategories(): Observable<any[]> {
+  saveJob(body:any): Observable<any>{
     const headers = new HttpHeaders({
       'Content-Type': 'application/json',
       'Authorization': `Bearer ${this.getToken()}`,
+    });
+
+    const options = {
+      headers: headers,
+      method: 'POST',
+    };
+    console.log(body)
+    return this.http.post<any>("http://127.0.0.1:8000/save_job", JSON.stringify(body), options);
+  }
+
+  getCategories(): Observable<any[]> {
+
+    const headers = new HttpHeaders({
+      'Content-Type': 'application/json',
     });
 
     return this.http.get<any[]>(this.apiUrl+"/jobs/category", {headers});

@@ -35,12 +35,7 @@ export class HeaderComponent {
   }
 
   login(){
-    const login = {
-      username: this.dataForm.username,
-      password: this.dataForm.password
-    }
-    console.log(login)
-    this.service.login(login.username, login.password).subscribe(
+    this.service.login(this.dataForm.username, this.dataForm.password).subscribe(
       response => {
         console.log(response)
         this.service.storeToken(response.token);
