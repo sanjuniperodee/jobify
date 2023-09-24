@@ -60,7 +60,7 @@ export class Service {
       headers: headers,
       method: "POST"
     }
-    return this.http.get<any[]>("http://127.0.0.1:8000/get_jobs", {headers});
+    return this.http.get<any[]>("http://185.146.1.93:8000/get_jobs", {headers});
     // let formData = new FormData();
     // formData.append('category_id', '1');
     // formData.append('company', 'value1');
@@ -120,7 +120,7 @@ export class Service {
       method: 'POST',
     };
     console.log(body)
-    return this.http.post<any>("http://127.0.0.1:8000/save_job", JSON.stringify(body), options);
+    return this.http.post<any>("http://185.146.1.93:8000/save_job", JSON.stringify(body), options);
   }
 
   getCategories(): Observable<any[]> {
