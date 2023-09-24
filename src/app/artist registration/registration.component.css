@@ -4,282 +4,281 @@
 }
 
 .nav{
-    background: rgba(6, 0, 67, 0.92);
-    display: flex;
-    gap: 289px;
-    padding: 50px 73px;
+  background: rgba(6, 0, 67, 0.92);
+  display: flex;
+  gap: 289px;
+  padding: 50px 73px;
 
 }
 
 
 .logo{
-    width: 319px;
-    color: #FFF;
-    font-size: 41px;
-    font-weight: 900;
+  width: 319px;
+  color: #FFF;
+  font-size: 41px;
+  font-weight: 900;
 }
 
 .title{
-    width: 282px;
-    color: #FFF;
-    font-size: 41px;
-    font-weight: 800;
-    text-align: center;
+  width: 282px;
+  color: #FFF;
+  font-size: 41px;
+  font-weight: 800;
+  text-align: center;
 }
 
 .h2-title{
-    color: #000;
-    font-size: 41px;
-    font-weight: 700;
+  color: #000;
+  font-size: 30px;
+  font-weight: 700;
 }
 
 .checkbox{
-    width: 43px;
-    height: 43px;
+  width: 43px;
+  height: 43px;
 }
 
 .label{
-    color: #000;
-    font-size: 24px;
-    font-weight: 500;
-    letter-spacing: -0.24px;
+  color: #000;
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: -0.24px;
 }
 
 .reg-btn{
-    width: 199px;
-    height: 63px;
-    color: #FFF;
-    font-size: 24px;
-    font-weight: 700;
-    letter-spacing: -0.24px;
-    border-radius: 14px;
-    background: #060043;
+  width: 199px;
+  height: 63px;
+  color: #FFF;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -0.24px;
+  border-radius: 14px;
+  background: #060043;
 }
 
 .regis-p{
-    color: #000;
-    font-size: 24px;
-    font-weight: 500;
+  color: #000;
+  font-size: 24px;
+  font-weight: 500;
 }
 
 .input{
-    width: 95%;
-    height: 87px;
-    border-radius: 11px;
-    border: 1px solid #060043;
-    background: #FFF;
+  width: 95%;
+  height: 87px;
+  border-radius: 11px;
+  border: 1px solid #060043;
+  background: #FFF;
 }
 
 input[type="text"]::placeholder {
-    padding: 28px 0px;
-    color: rgba(0, 0, 0, 0.49);
-    font-size: 25px;
-    font-weight: 500;
+  padding: 28px 0px;
+  color: rgba(0, 0, 0, 0.49);
+  font-size: 25px;
+  font-weight: 500;
 }
 
 input{
   color: rgba(0, 0, 0, 0.49);
   font-size: 25px;
   font-weight: 500;
+  color: black;
 }
 
 
 /* Скрыть оригинальный чекбокс */
 input[type="checkbox"].soglawenie {
-    display: none;
-  }
+  display: none;
+}
 
-  /* Стилизация внешнего вида чекбокса */
-  label.regis-p {
-    display: inline-block;
-    align-items: center;
-    position: relative;
-    padding-left: 51px; /* Отступ слева, чтобы создать "вымпел" */
-    cursor: pointer;
-  }
+/* Стилизация внешнего вида чекбокса */
+label.regis-p {
+  display: inline-block;
+  align-items: center;
+  position: relative;
+  padding-left: 51px; /* Отступ слева, чтобы создать "вымпел" */
+  cursor: pointer;
+}
 
-  /* Создание внешнего вида "контейнера" чекбокса */
-  label.regis-p:before {
-    content: "";
-    display: inline-block;
-    width: 37px;
-    height: 37px;
-    position: absolute;
-    left: 0;
-    top: 1px;
-    border-radius: 10px;
-    border: 3px solid #060043;
-    background: #FFF;
-  }
+/* Создание внешнего вида "контейнера" чекбокса */
+label.regis-p:before {
+  content: "";
+  display: inline-block;
+  width: 37px;
+  height: 37px;
+  position: absolute;
+  left: 0;
+  top: 1px;
+  border-radius: 10px;
+  border: 3px solid #060043;
+  background: #FFF;
+}
 
-  /* Изменение вида чекбокса, когда он отмечен */
-  input[type="checkbox"].soglawenie:checked + label.regis-p:before {
-    background-color: #060043; /* Изменение цвета фона при отметке чекбокса */
-  }
+/* Изменение вида чекбокса, когда он отмечен */
+input[type="checkbox"].soglawenie:checked + label.regis-p:before {
+  background-color: #060043; /* Изменение цвета фона при отметке чекбокса */
+}
 
-  .reg-btn-nazad{
-    color: #000;
-    font-size: 24px;
-    font-weight: 700;
-  }
+.reg-btn-nazad{
+  color: #000;
+  font-size: 24px;
+  font-weight: 700;
+}
 
-  .reg-btn-dalee{
-    color: #FFF;
-    font-size: 24px;
-    font-weight: 700;
-    letter-spacing: -0.24px;
-    width: 199px;
-    height: 63px;
-    border-radius: 14px;
-    background: #060043;
-  }
+.reg-btn-dalee{
+  color: #FFF;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -0.24px;
+  width: 199px;
+  height: 63px;
+  border-radius: 14px;
+  background: #060043;
+}
 
-  .seleckt-btn{
-    display: grid;
-    grid-template-columns: repeat(5,1fr);
-    gap: 9px;
-    width: 91%;
-  }
+.seleckt-btn{
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  gap: 9px;
+  width: 91%;
+}
 
-  .btn-vacans{
-    padding: 3px 20px;
-    background-color: #060043;
-    color: #FFF;
-    font-size: 21px;
-    font-weight: 500;
-    border-radius: 20px;
-  }
+.btn-vacans{
+  padding: 3px 20px;
+  background-color: #060043;
+  color: #FFF;
+  font-size: 21px;
+  font-weight: 500;
+  border-radius: 20px;
+}
 
-  .seleckt-text{
-    color: #060043;
-    font-size: 21px;
-    font-weight: 500;
-  }
+.seleckt-text{
+  color: #060043;
+  font-size: 21px;
+  font-weight: 500;
+}
 
-  .geo{
-    width: 95%;
-    height: 436px;
-    flex-shrink: 0;
-    border-radius: 21px;
-    border: 3px solid #060043;
-    background: #FFF;
-    text-align: center;
-    padding-top:8% ;
-    font-size: 127.2px;
-    font-weight: 700;
-  }
+.geo{
+  width: 95%;
+  height: 436px;
+  flex-shrink: 0;
+  border-radius: 21px;
+  border: 3px solid #060043;
+  background: #FFF;
+  text-align: center;
+  padding-top:8% ;
+  font-size: 127.2px;
+  font-weight: 700;
+}
 
 
 .general-foto{
-    width: 984px;
-    height: 800px;
-    flex-shrink: 0;
-    border-radius: 27px;
-    border: 3px solid #060043;
-    background: #FFF;
-    margin: 0 auto;
-    display: flex;
-    gap: 151px;
+  height: 800px;
+  flex-shrink: 0;
+  border-radius: 27px;
+  border: 3px solid #060043;
+  background: #FFF;
+  margin: 0 auto;
+  display: flex;
+  gap: 151px;
 
 }
 
 .foto-ramka{
-    width: 261px;
-    height: 346px;
-    flex-shrink: 0;
-    background: #D9D9D9;
-    position: relative;
+  width: 261px;
+  height: 346px;
+  flex-shrink: 0;
+  background: #D9D9D9;
+  position: relative;
 
 }
 
 .ramka{
-    width: 80px;
-    height: 80px;
-    background-color: #000;
-    border-radius: 50px;
-    padding: 18px 20px;
-    position: absolute;
-    content: '';
-    top: 300px;
-    left: 220px;
+  width: 80px;
+  height: 80px;
+  background-color: #000;
+  border-radius: 50px;
+  padding: 18px 20px;
+  position: absolute;
+  content: '';
+  top: 300px;
+  left: 220px;
 }
 
 .foto-info{
-    width: 415px;
-    height: 800px;
-    flex-shrink: 0;
-    border-radius: 0px 26px 26px 0px;
-    border: 3px solid #060043;
-    opacity: 0.699999988079071;
-    background: rgba(217, 217, 217, 0.61);
+  width: 415px;
+  height: 800px;
+  flex-shrink: 0;
+  border-radius: 0px 26px 26px 0px;
+  border: 3px solid #060043;
+  opacity: 0.699999988079071;
+  background: rgba(217, 217, 217, 0.61);
 }
 
 .info-text{
-    color: #000;
-    font-size: 20px;
-    font-weight: 500;
-    width: 340px;
+  color: #000;
+  font-size: 20px;
+  font-weight: 500;
 }
 
 .instruction-text{
-    color: #000;
-    font-size: 26px;
-    font-weight: 700;
-    letter-spacing: -0.26px;
+  color: #000;
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: -0.26px;
 }
 
 .foto-primer{
-    width: 71px;
-    height: 81px;
-    flex-shrink: 0;
-    border-radius: 8px;
-    border: 2px solid #1E9E3A;
-    background: #FFF;
+  width: 71px;
+  height: 81px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  border: 2px solid #1E9E3A;
+  background: #FFF;
 }
 
 .foto-primer2{
-    width: 71px;
-    height: 81px;
-    border-radius: 8px;
-    border: 2px solid #FFF;
-    background: #D0CCCC;
+  width: 71px;
+  height: 81px;
+  border-radius: 8px;
+  border: 2px solid #FFF;
+  background: #D0CCCC;
 }
 
 .wrap-foto{
-    display: flex;
-    position: relative;
-    width: 150px;
+  display: flex;
+  position: relative;
+  width: 150px;
 }
 
 .desc-p{
-    color: #000;
-    font-size: 16px;
-    font-weight: 700;
+  color: #000;
+  font-size: 16px;
+  font-weight: 700;
 }
 
 .decc-li{
-    color: #000;
-    font-size: 16px;
-    font-weight: 500;
+  color: #000;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 ul {
-    /* Убираем стандартные маркеры списка */
-    list-style: none;
-  }
+  /* Убираем стандартные маркеры списка */
+  list-style: none;
+}
 
-  ul li {
-    position: relative; /* Обязательно устанавливаем позиционирование, чтобы псевдоэлемент сработал */
-    padding-left: 1em; /* Добавляем отступ слева для места под круглым маркером */
-  }
+ul li {
+  position: relative; /* Обязательно устанавливаем позиционирование, чтобы псевдоэлемент сработал */
+  padding-left: 1em; /* Добавляем отступ слева для места под круглым маркером */
+}
 
-  ul li::before {
-    content: "●"; /* Вместо ● можно использовать другие символы или Unicode */
-    position: absolute;
-    left: 0;
-    top: 0; /* Выравниваем маркер по вертикали (можно настроить по вашему желанию) */
-    color: black; /* Задаем цвет круглому маркеру */
-  }
+ul li::before {
+  content: "●"; /* Вместо ● можно использовать другие символы или Unicode */
+  position: absolute;
+  left: 0;
+  top: 0; /* Выравниваем маркер по вертикали (можно настроить по вашему желанию) */
+  color: black; /* Задаем цвет круглому маркеру */
+}
 
 /* Стили для устройств меньше 576px (xs) */
 @media (max-width: 576px) {
@@ -297,11 +296,11 @@ ul {
   }
 
   .gena{
-    margin-left: 4px;
+    margin-left: 79px;
   }
 
   .gena2{
-    margin-top: 50px;
+    margin-top: 20px;
     gap: 0;
     margin-bottom: 0;
   }
@@ -311,36 +310,60 @@ ul {
   }
 
   .gena3{
-    margin-left: 4px;
+    margin-left: 79px;
   }
 
   .gena4{
     margin-top: 0px;
     margin-right: 34px;
+    margin-bottom: 65px;
   }
 
 
   .regis-p{
-    font-size: 16px;
-    margin-bottom: 28px;
+    font-size: 10px;
+    margin-bottom: 16px;
+    padding-left: 10px;
   }
 
   .gena5{
-    margin-bottom: 40px;
+    margin-bottom: 0px;
+    margin-top: 8px;
   }
 
   .gena6{
-    margin-top: 23px;
+    margin-top: 0px;
+    margin-left: 88px;
+    margin-bottom: 66px;
+  }
+
+  .gena10{
+    padding-right: 10px;
+  }
+
+  .gena11{
+    width: 344px;
+  }
+
+  .reg-btn-nazad{
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  .reg-btn-dalee{
+    width: 110px;
+    height: 42px;
   }
 
   .seleckt-btn{
     display: grid;
-    grid-template-columns: repeat(1,1fr);
-    gap: 13px;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+
   }
 
   .gena7{
-    margin-top: 62px;
+    margin-top: 19px;
     margin-left: 113px;
   }
 
@@ -352,14 +375,10 @@ ul {
   .general-foto{
     gap: 65px;
     display: grid;
-    width: 856px;
     height: auto;
-    width: 429px;
+    margin-right: 46px;
   }
 
-  .foto-ramka{
-    margin-left: 83px;
-  }
 
   .foto-info{
     width: 374px;
@@ -369,8 +388,88 @@ ul {
 
   }
 
+  .desc-p{
+    margin-left: 0;
+  }
+
+  ul{
+    margin-left: 0;
+  }
+
   .info-text{
-    margin-left: 47px;
+    margin-left: 33px;
+    font-size: 17px;
+  }
+
+  .instruction-text{
+    margin: 0;
+    font-size: 23px;
+
+  }
+
+  .gena12{
+    margin-left: 79px;
+  }
+
+  .gena13{
+    gap: 50px;
+    margin: 0;
+  }
+
+  .gena14,.gena15{
+    padding-right: 150px;
+  }
+
+  .input{
+    width: 80%;
+    height: 47px;
+    margin-bottom: 20px;
+  }
+
+  .reg-btn{
+    width: 110px;
+    height: 42px;
+    margin-right: 43px;
+  }
+
+  input[type="text"]::placeholder {
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  input{
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  .h2-title{
+    margin-left: 4px;
+  }
+
+  label.regis-p:before{
+    width: 25px;
+    height: 25px;
+    top: -7px;
+    left: 8px;
+  }
+
+  label.regis-p{
+    padding-left: 37px;
+  }
+
+  .btn-vacans{
+    font-size: 16px;
+    padding: 0;
+    width: 132px;
+  }
+
+  .seleckt-text{
+    font-size: 17px;
+    margin-top: 10px;
+  }
+
+  .gena16{
+    margin-top: 50px;
   }
 }
 
@@ -442,7 +541,6 @@ ul {
   .general-foto{
     gap: 65px;
     display: grid;
-    width: 856px;
     height: auto;
     width: 429px;
   }
@@ -548,7 +646,6 @@ ul {
 @media (min-width: 1200px) {
 
 }
-
 
 
 

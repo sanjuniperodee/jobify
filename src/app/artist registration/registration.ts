@@ -1,5 +1,7 @@
 
 import { Component } from '@angular/core';
+import {Service} from "../service";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-registration',
@@ -7,14 +9,24 @@ import { Component } from '@angular/core';
   styleUrls: ['./registration.component.css']
 })
 export class RegistrationComponent {
+  constructor(private service:Service, private router: Router){}
+
   firstName: string = '';
   lastName: string = '';
   telephone:any;
   mail: string = '';
-  отчество: string = '';
   activeStep:number = 1;
   isNextButtonEnabled: boolean = false;
   professions: string ='';
+
+  formData = {
+    'phone': "",
+    "email": "",
+    "firstName": "",
+    "lastName": "",
+    "password": "",
+    "username": ""
+  }
 
   viborVak(profession:string){
     this.professions = profession
@@ -46,5 +58,17 @@ export class RegistrationComponent {
     }
   }
 
-
+  register(){
+    console.log(this.formData)
+    this.service.register(this.formData).subscribe(
+      (response) => {
+        console.log(response)
+        alert("На почту пришло сообщение о подтверждение")
+      }
+    )
+  }
+  onFileSelected(event:Event){
+    const input = event.target as HTMLInputElement
+    const files = input.files;
+  }
 }
