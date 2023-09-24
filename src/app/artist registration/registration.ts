@@ -17,7 +17,9 @@ export class RegistrationComponent {
   professions: string ='';
 
   viborVak(profession:string){
-    this.professions = profession
+    if(!this.professions){
+      this.professions = profession;
+    }
   }
 
   goToStep(stepNumber:number){
@@ -44,6 +46,11 @@ export class RegistrationComponent {
     } else {
       this.isNextButtonEnabled = false;
     }
+  }
+
+  onFileSelected(event:Event){
+    const input = event.target as HTMLInputElement
+    const files = input.files;
   }
 
 

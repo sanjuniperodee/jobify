@@ -35,10 +35,20 @@
                     <input type="text" class="w-[760px] h-[185px] bg-[#D2D2D2] rounded-[14px] pl-[20px] gen-input">
                     <div class="foto">
                         <div class="">Добавить фото или файл</div>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
+                        <label for="vibdok">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
                             <path d="M16.9997 7.08325V26.9166M7.08301 16.9999H26.9163" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
+                          </svg>
+                        </label>
+                        <input type="file" style="display:none;" id="vibdok" accept="image/*, application/pdf">
                     </div>
+
+                  <div class="uploaded-files">
+                    <h3>Загруженные файлы</h3>
+                    <ul #uploadedFilesList></ul>
+                  </div>
+
+
                 </div>
 
 
